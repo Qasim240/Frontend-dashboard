@@ -1,0 +1,52 @@
+<!-- Include Bootstrap and Chart.js libraries -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Create a canvas element for the chart -->
+<canvas id="fsfsdf" ></canvas>
+
+<script>
+// Get the canvas element and context
+var ctx = document.getElementById('fsfsdf').getContext('2d');
+
+// Create the chart data
+var chartData = {
+    labels: ['Missed Deadlines', 'Late Deliveries', 'Successfully Completed'],
+    datasets: [{
+        label: 'Tasks',
+        data: [10, 5, 85],
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.2)', // Red for Missed Deadlines
+            'rgba(255, 205, 86, 0.2)', // Yellow for Late Deliveries
+            'rgba(75, 192, 192, 0.2)' // Green for Successfully Completed
+        ],
+        borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(255, 205, 86, 1)',
+            'rgba(75, 192, 192, 1)'
+        ],
+        borderWidth: 1
+    }]
+};
+
+// Create the chart options
+var chartOptions = {
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    },
+    legend: {
+        display: false
+    }
+};
+
+// Create the chart
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: chartData,
+    options: chartOptions
+});
+</script>

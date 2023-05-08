@@ -10845,9 +10845,13 @@ a:focus {
   width: 100%;
 }
 
+
 @media (min-width: 768px) {
   .chart-area {
     height: 20rem;
+  }
+  .chart-trend {
+    height: 15rem;
   }
 }
 
