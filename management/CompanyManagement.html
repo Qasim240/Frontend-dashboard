@@ -97,11 +97,14 @@
               <span>User Management</span>
           </a>
           <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-              <div class=" py-2 collapse-inner rounded">
-                  <a class="collapse-item" href="../management/CandidateManagement.html">Candidate Management</a>
-                  <a class="collapse-item active" href="../management/CompanyManagement.html">Company Management</a>
-       
-              </div>
+            <div class=" py-2 collapse-inner rounded">
+              <a class="collapse-item " href="../management/CandidateManagement.html">Candidate Management</a>
+              <a class="collapse-item active" href="../management/CompanyManagement.html">Company Management</a>
+              <a class="collapse-item " href="../management/PartnerManagement.html">Partner Management</a>
+              <a class="collapse-item " href="../management/ResellerManagement.html">Reseller Management</a>
+             
+              <a class="collapse-item" href="../management/EmployeeDataManagement.html">Employee Data Management</a>
+            </div>
           </div>
       </li>
 
@@ -350,33 +353,61 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="d-flex align-items-center">
-                  <button class="btn btn-primary mr-3" data-toggle="modal" data-target="#newUserModal">
-                    Create Company
-                  </button>
+              <div class="row mb-5">
+                <div class="col-lg-5">
 
-                  <button class="btn btn-primary mr-3" onclick="exportData()">
-                    Export Raw Data
-                  </button>
-
-                  <div class="form-group mb-0 d-flex">
-                    <select class="form-control ml-2 mr-3" id="dateFilter">
-                      <option disabled selected value="all">Filter by</option>
-                      <option value="last24">Last 24 Hours</option>
-                      <option value="last7">Last 7 Days</option>
-                      <option value="last30">Last 30 Days</option>
-                    </select>
-                    <div class="">
-                      <input cl type="date" id="Custom" name="Custom" class="ml-2 form-control">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <button class="btn btn-primary mb-2 w-100 mr-3" data-toggle="modal"
+                                data-target="#newUserModal">
+                                Create Company
+                            </button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
+                                Export Raw Data
+                            </button>
+                        </div>
                     </div>
-                  </div>
+
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="text-center my-lg-0 my-3">
+                        <p class="mb-0">Total Candidates: 350</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group mb-0 d-flex">
+                                <select class="form-control mb-3" id="dateFilter">
+                                    <option disabled selected value="all">Filter by</option>
+                                    <option value="last24">Last 24 Hours</option>
+                                    <option value="last7">Last 7 Days</option>
+                                    <option value="last30">Last 30 Days</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <input cl type="date" id="Custom" name="Custom"
+                                    class=" mb-3 form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
 
 
                 </div>
 
-                <p class="mb-0">Total Candidates: 350</p>
-              </div>
+
+            </div>
 
               <div class="table-responsive">
 
