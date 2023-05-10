@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Where Have You Done It</title>
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="../css/sb-admin-2.css" rel="stylesheet">
+
+
+  <!-- Custom styles for this page -->
+  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+      <!-- Sidebar - Brand -->
+    <div class="d-flex align-items-center">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+          <div class="sidebar-brand-text mx-3">Logo</div>
+      </a>
+      <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0 mb-0" id="sidebarToggle"></button>
+      </div>
+    </div>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+   
+          <li class="nav-item">
+              <a class="nav-link text-white collapsed" href="#" data-toggle="collapse" data-target="#Dashboard" aria-expanded="true" aria-controls="Dashboard">
+              <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+              <span>Dashboard</span>
+              </a>
+              <div id="Dashboard" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+              <div class=" py-2 collapse-inner rounded">
+                  <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse" data-target="#GlobalDashboard" aria-expanded="true" aria-controls="GlobalDashboard">
+                  <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                  <span>Global Dashboard</span>
+                  </a>
+                  <div id="GlobalDashboard" class="collapse " aria-labelledby="headingTwo" data-parent="#Dashboard">
+                      <div class="bg-white py-2 collapse-inner rounded">
+                          <a class="collapse-item active" href="index.html">Audit Dashboard</a>
+                          <a class="collapse-item" href="HRAdministrationDashboard.html">HR Administration
+                              Dashboard</a>
+                          <a class="collapse-item" href="HRAdvisoryDashboard.html">HR Advisory Dashboard</a>
+                          <a class="collapse-item " href="PayrollDashboard.html">Payroll Dashboard</a>
+                          <a class="collapse-item " href="CleontimeDashboard.html">Cleontime Dashboard</a>
+                          <a class="collapse-item " href="CleonAssetDashboard.html">Cleon Asset Dashboard</a>
+                          <a class="collapse-item" href="PerformanceDashboard.html">Performance Dashboard</a>
+                          <a class="collapse-item" href="LearningDashboard.html">Learning Dashboard</a>
+                          <a class="collapse-item" href="LeaveManagementDashboard.html">Leave Management Dashboard</a>
+                          <a class="collapse-item " href="HealthManagementDashboard.html">Health Management Dashboard</a>
+                          <a class="collapse-item" href="InternalControl.html">Internal Control</a>
+                          <a class="collapse-item" href="PartnersDashboard.html">Partners Dashboard</a>
+                          <a class="collapse-item" href="ResellerDashboard.html">Reseller Dashboard</a>
+                      </div>
+                  </div>
+              </div>
+              </div>
+          </li>
+      <!-- Divider -->
+
+      <hr class="sidebar-divider">
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="true" aria-controls="collapseTwo">
+              <!-- <i class="fas fa-fw fa-cog"></i> -->
+              <span>User Management</span>
+          </a>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+              <div class=" py-2 collapse-inner rounded">
+                  <div class=" py-2 collapse-inner rounded">
+                      <a class="collapse-item " href="../management/CandidateManagement.html">Candidate Management</a>
+                      <a class="collapse-item" href="../management/CompanyManagement.html">Company Management</a>
+                      <a class="collapse-item " href="../management/PartnerManagement.html">Partner Management</a>
+                      <a class="collapse-item " href="../management/ResellerManagement.html">Reseller Management</a>
+                      <a class="collapse-item" href="../management/EmployeeDataManagement.html">Employee Data Management</a>
+                    </div>
+              </div>
+          </div>
+      </li>
+
+
+      <li class="nav-item">
+          <a class="nav-link text-white" href="#" data-toggle="collapse" data-target="#ManageRecruitmentModule" aria-expanded="true" aria-controls="Dashboard">
+            <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+            <span>Recruitment Module</span>
+          </a>
+          <div id="ManageRecruitmentModule" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+              <div class="py-2 collapse-inner rounded">
+                  <div class=" ">
+                      <a class="nav-link  w-12rem sub-nav-link" href="#" data-toggle="collapse" data-target="#CandidateOnboarding" aria-expanded="true" aria-controls="GlobalDashboard">
+                        <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                        <span>Candidate Onboarding</span>
+                      </a>
+                      <div id="CandidateOnboarding" class="collapse show" aria-labelledby="headingTwo" data-parent="#Dashboard">
+                          <div class="">
+                              <div class="">
+                                <a class="collapse-item" href="../ManageRecruitmentModule/RecruitmentIntroductoryVideo.html">Management Recruitment Introductory Video</a>
+                                <a class="collapse-item" href="../ManageRecruitmentModule/WhoAreYouForm.html">Manage Candidate ""Who Are You"" Form </a>
+                                <a class="collapse-item" href="../ManageRecruitmentModule/WhatYouCanDo.html">Manage Candidate ""What You Can Do"" Form</a>
+                                <a class="collapse-item active" href="../ManageRecruitmentModule/WhereHaveYouDone.html">Manage Candidate ""Where Have You Done It"" Form</a>
+                                <a class="collapse-item" href="../ManageRecruitmentModule/AchievementForm.html">Manage Candidate ""Achievement"" Form</a>
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+  
+                    <div class=" ">
+                      <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse" data-target="#ManageCandidates" aria-expanded="true" aria-controls="GlobalDashboard">
+                        <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                        <span>Manage Candidates</span>
+                      </a>
+                      <div id="ManageCandidates" class="collapse " aria-labelledby="headingTwo" data-parent="#Dashboard">
+                          <div class=" py-2 ">
+                              <div class=" py-2 ">
+                                  <a class="collapse-item " href="#">View All Candidate Page (View CV, View Cover Letter)</a>
+                                  <a class="collapse-item" href="#">View All Hired Candidates</a>
+                                  <a class="collapse-item " href="#">View All Shortlisted Candidates</a>
+                                  <a class="collapse-item" href="#">View All Employed Candidates</a>
+                                  <a class="collapse-item" href="#">View All Available Candidates</a>
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+                    
+                    <div class=" ">
+                      <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse" data-target="#CompanyActivities" aria-expanded="true" aria-controls="GlobalDashboard">
+                        <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                        <span>Manage Company Activities</span>
+                      </a>
+                      <div id="CompanyActivities" class="collapse " aria-labelledby="headingTwo" data-parent="#Dashboard">
+                          <div class=" py-2 ">
+                              <div class=" py-2 ">
+                                  <a class="collapse-item " href="#">View All Recruiting Companies</a>
+                                  <a class="collapse-item" href="#">View All Talent Requirement Brief</a>
+                                  <a class="collapse-item " href="#">View All Sent Offer Letters</a>
+                                  <a class="collapse-item" href="#">View All E-Signed Offer Letter</a>
+                                </div>
+                          </div>
+                      </div>
+                    </div>
+              </div>
+            
+
+          </div>
+        </li>
+
+
+
+
+
+
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+     
+
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+              <i class="fas fa-fw fa-chart-area"></i>
+              <span>side menu</span></a>
+      </li>
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+          <a class="nav-link" href="tables.html">
+              <i class="fas fa-fw fa-table"></i>
+              <span>side menu</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      
+
+    
+
+  </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+      <!-- Main Content -->
+      <div class="container my-4">
+        <h1>Where have You done it Form</h1>
+        <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#addFieldModal">Add New Field</button>
+        <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>SN</th>
+                  <th>Field Title</th>
+                  <th>Form Element</th>
+                  <th>Description</th>
+                  <th>Date Created</th>
+                  <th>Created By</th>
+                  <th>Last Updated</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Full Name</td>
+                  <td>Text Input</td>
+                  <td>Enter your full name</td>
+                  <td>2021-06-01</td>
+                  <td>John Doe</td>
+                  <td>2021-06-01</td>
+                  <td>
+                    <button class="btn btn-sm btn-primary">Edit</button>
+                    <button class="btn btn-sm btn-danger">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Email Address</td>
+                  <td>Email Input</td>
+                  <td>Enter your email address</td>
+                  <td>2021-06-02</td>
+                  <td>Jane Smith</td>
+                  <td>2021-06-03</td>
+                  <td>
+                    <button class="btn btn-sm btn-primary">Edit</button>
+                    <button class="btn btn-sm btn-danger">Delete</button>
+                  </td>
+                </tr>
+                <!-- more rows... -->
+              </tbody>
+            </table>
+          </div>
+          
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white"></footer>
+      <!-- End of Footer -->
+    </div>
+    <!-- End of Content Wrapper -->
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+<!-- Add Field Modal -->
+<div class="modal fade" id="addFieldModal" tabindex="-1" role="dialog" aria-labelledby="addFieldModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addFieldModalLabel">Add New Field</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="formTitleInput">Enter Form Title</label>
+              <input type="text" class="form-control" id="formTitleInput" placeholder="e.g. Phone Number" required>
+            </div>
+            <div class="form-group">
+              <label for="formElementSelect">Select Form Element</label>
+              <select class="form-control" id="formElementSelect" required>
+                <option value="">--Select Element--</option>
+                <option value="Text Input">Text Input</option>
+                <option value="Email Input">Email Input</option>
+                <option value="Password Input">Password Input</option>
+                <option value="Checkbox">Checkbox</option>
+                <option value="Radio Buttons">Radio Buttons</option>
+                <option value="Dropdown">Dropdown</option>
+                <option value="Date Picker">Date Picker</option>
+                <option value="File Upload">File Upload</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="formDescriptionTextarea">Add Description</label>
+              <textarea class="form-control" id="formDescriptionTextarea" rows="3" placeholder="Optional"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Select "Logout" below if you are ready to end your current session.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">
+            Cancel
+          </button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Confirmation modal -->
+  <div class="modal fade" id="suspendModal" tabindex="-1" role="dialog" aria-labelledby="suspendModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="suspendModalLabel">Suspend User Confirmation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to suspend this user?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger">Suspend User</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script>
+   // Update video button click event
+   $("#update-video-btn").click(function() {
+        // Show file upload dialog and get the selected file
+        var input = document.createElement("input");
+        input.type = "file";
+        input.accept = "video/*";
+        input.onchange = function() {
+          var file = input.files[0];
+          if (file) {
+            // Update the video source and last updated date
+            var videoSrc = URL.createObjectURL(file);
+            var lastUpdated = new Date();
+            $("#video-player source").attr("src", videoSrc);
+            $("#video-player")[0].load();
+            $("#last-updated").text("Last updated: " + lastUpdated.toLocaleString());
+          }
+        };
+        input.click();
+      });
+  </script>
+  <!-- Bootstrap core JavaScript-->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="../js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+
+</body>
+
+</html>
