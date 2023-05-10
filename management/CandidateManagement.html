@@ -697,6 +697,15 @@
 
 
   <script>
+    $(document).ready(function() {
+    $('#myTable').DataTable({
+        "paging": true,
+        "searching": true,
+        "ordering": true,
+        "info": true
+    });
+});
+
     // select
     document.getElementById('selectAll').addEventListener('change', function () {
       let checkboxes = document.getElementsByTagName('input');
