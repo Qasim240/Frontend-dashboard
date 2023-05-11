@@ -8,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>All Shorlised Candidates</title>
+    <title>Recruiting Companies</title>
 
     <!-- Custom fonts for this template -->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -60,7 +60,7 @@
                         <div id="GlobalDashboard" class="collapse " aria-labelledby="headingTwo"
                             data-parent="#Dashboard">
                             <div class="bg-white py-2 collapse-inner rounded">
-                                <a class="collapse-item active" href="index.html">Audit Dashboard</a>
+                                <a class="collapse-item " href="index.html">Audit Dashboard</a>
                                 <a class="collapse-item" href="HRAdministrationDashboard.html">HR Administration
                                     Dashboard</a>
                                 <a class="collapse-item" href="HRAdvisoryDashboard.html">HR Advisory Dashboard</a>
@@ -158,12 +158,14 @@
                                 data-parent="#Dashboard">
                                 <div class=" py-2 ">
                                     <div class=" py-2 ">
-                                        <a class="collapse-item "
-                                            href="../ManageCandidates/ViewAllCandidate.html">View All Candidate Page
+                                        <a class="collapse-item " href="../ManageCandidates/ViewAllCandidate.html">View
+                                            All Candidate Page
                                             (View CV, View Cover Letter)</a>
                                         <a class="collapse-item " href="../ManageCandidates/HiredCandidates.html">View
                                             All Hired Candidates</a>
-                                        <a class="collapse-item active" href="../ManageCandidates/ShortlistedCandidates.html">View All Shortlisted Candidates</a>
+                                        <a class="collapse-item active"
+                                            href="../ManageCandidates/ShortlistedCandidates.html">View All Shortlisted
+                                            Candidates</a>
                                         <a class="collapse-item" href="../ManageCandidates/EmployedCandidates.html">View
                                             All Employed Candidates</a>
                                         <a class="collapse-item"
@@ -184,10 +186,10 @@
                                 data-parent="#Dashboard">
                                 <div class=" py-2 ">
                                     <div class=" py-2 ">
-                                        <a class="collapse-item " href="RecruitingCompanies.html">View All Recruiting Companies</a>
-                                        <a class="collapse-item" href="RequirementBrief.html">View All Talent RequirementBrief</a>
-                                        <a class="collapse-item " href="OfferLetters.html">View All Sent Offer Letters</a>
-                                        <a class="collapse-item" href="#">View All E-Signed Offer Letter</a>
+                                        <a class="collapse-item active" href="../ManageCompanies/RecruitingCompanies.html">View All Recruiting Companies</a>
+                                        <a class="collapse-item" href="../ManageCompanies/TalentRequirementBrief.html">View All Talent RequirementBrief</a>
+                                        <a class="collapse-item " href="../ManageCompanies/SentOfferLetters.html">View All Sent Offer Letters</a>
+                                        <a class="collapse-item" href="../ManageCompanies/SignedOfferLetter.html">View All E-Signed Offer Letter</a>
                                     </div>
                                 </div>
                             </div>
@@ -449,93 +451,95 @@
 
             <!-- Main Content -->
             <div class="container my-4">
-                
-                    <div class="row">
-                        <div class="col-lg-4">
-                            </div>
-                        <div class="col-lg-4">
-                            <div class="form-group mb-0 d-flex">
-                                <select class="form-control mb-3" id="dateFilter">
-                                    <option disabled="" selected="" value="all">Filter by</option>
-                                    <option value="last24">Last 24 Hours</option>
-                                    <option value="last7">Last 7 Days</option>
-                                    <option value="last30">Last 30 Days</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="">
-                                <input cl="" type="date" id="Custom" name="Custom" class=" mb-3 form-control">
-                            </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group mb-0 d-flex">
+                            <select class="form-control mb-3" id="dateFilter">
+                                <option disabled="" selected="" value="all">Filter by</option>
+                                <option value="last24">Last 24 Hours</option>
+                                <option value="last7">Last 7 Days</option>
+                                <option value="last30">Last 30 Days</option>
+                            </select>
                         </div>
                     </div>
+                    <div class="col-lg-4">
+                        <div class="">
+                            <input cl="" type="date" id="Custom" name="Custom" class=" mb-3 form-control">
+                        </div>
+                    </div>
+                </div>
                 <div class="table-responsive">
-                    <h2 class="mb-3">View All Shorlised Candidates</h2>
                     <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0">
-                      <thead>
-                        <tr>
-                          <th>SN</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Email</th>
-                          <th>Phone</th>
-                          <th>Country</th>
-                          <th>Sex</th>
-                          <th>Hire Date</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>John</td>
-                          <td>Doe</td>
-                          <td>johndoe@example.com</td>
-                          <td>+1 (555) 555-1212</td>
-                          <td>United States</td>
-                          <td>Male</td>
-                          <td>2022-01-01</td>
-                          <td>
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Actions
-                              </button>
-                              <div class="dropdown-menu" aria-labelledby="actionDropdown">
-                                <a class="dropdown-item" href="#">View Data</a>
-                                <a class="dropdown-item" href="#">Download CV</a>
-                                <a class="dropdown-item" href="#">View Cover Letter</a>
-                                <a class="dropdown-item" href="#">Login to Profile</a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Jane</td>
-                          <td>Doe</td>
-                          <td>janedoe@example.com</td>
-                          <td>+44 20 7123 4567</td>
-                          <td>United Kingdom</td>
-                          <td>Female</td>
-                          <td>2022-02-15</td>
-                          <td>
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Actions
-                              </button>
-                              <div class="dropdown-menu" aria-labelledby="actionDropdown">
-                                <a class="dropdown-item" href="#">View Data</a>
-                                <a class="dropdown-item" href="#">Download CV</a>
-                                <a class="dropdown-item" href="#">View Cover Letter</a>
-                                <a class="dropdown-item" href="#">Login to Profile</a>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
+                        <thead>
+                            <tr>
+                                <th>SN</th>
+                                <th>Company Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Location</th>
+                                <th>Contact Person Full Name</th>
+                                <th>Contact Email</th>
+                                <th>Contact Phone</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>ABC Inc.</td>
+                                <td>abc@example.com</td>
+                                <td>+1 (555) 555-1212</td>
+                                <td>New York, USA</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>+1 (555) 555-1212</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            id="actionDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Actions
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="actionDropdown">
+                                            <a class="dropdown-item" href="#">View Audit Trail</a>
+                                            <a class="dropdown-item" href="#">View Talent Briefs</a>
+                                            <a class="dropdown-item" href="#">View Hired Candidates</a>
+                                            <a class="dropdown-item" href="#">View Shortlisted Candidates</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>XYZ Ltd.</td>
+                                <td>xyz@example.com</td>
+                                <td>+44 20 7123 4567</td>
+                                <td>London, UK</td>
+                                <td>Jane Doe</td>
+                                <td>janedoe@example.com</td>
+                                <td>+44 20 7123 4567</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button"
+                                            id="actionDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Actions
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="actionDropdown">
+                                            <a class="dropdown-item" href="#">View Audit Trail</a>
+                                            <a class="dropdown-item" href="#">View Talent Briefs</a>
+                                            <a class="dropdown-item" href="#">View Hired Candidates</a>
+                                            <a class="dropdown-item" href="#">View Shortlisted Candidates</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
+                    
 
                 </div>
 
@@ -568,49 +572,49 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                          <label for="first-name">First Name:</label>
-                          <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
                         </div>
                         <div class="form-group">
-                          <label for="last-name">Last Name:</label>
-                          <input type="text" class="form-control" id="last-name" placeholder="Enter last name">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" class="form-control" id="last-name" placeholder="Enter last name">
                         </div>
                         <div class="form-group">
-                          <label for="phone">Phone:</label>
-                          <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                            <label for="phone">Phone:</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
                         </div>
                         <div class="form-group">
-                          <label for="email">Email:</label>
-                          <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email">
                         </div>
                         <div class="form-group">
-                          <label for="country">Country:</label>
-                          <select class="form-control" id="country">
-                            <option>Select country</option>
-                            <option>United States</option>
-                            <option>Canada</option>
-                            <option>United Kingdom</option>
-                            <option>Australia</option>
-                          </select>
+                            <label for="country">Country:</label>
+                            <select class="form-control" id="country">
+                                <option>Select country</option>
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>United Kingdom</option>
+                                <option>Australia</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                          <label>Gender:</label>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                            <label class="form-check-label" for="male">
-                              Male
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                            <label class="form-check-label" for="female">
-                              Female
-                            </label>
-                          </div>
+                            <label>Gender:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                <label class="form-check-label" for="male">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                <label class="form-check-label" for="female">
+                                    Female
+                                </label>
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
-                      
+                    </form>
+
                 </div>
             </div>
         </div>
@@ -688,22 +692,22 @@
             input.click();
         });
     </script>
-  <!-- Bootstrap core JavaScript-->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Core plugin JavaScript-->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for all pages-->
-  <script src="../js/sb-admin-2.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
 
-  <!-- Page level plugins -->
-  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-  <!-- Page level custom scripts -->
-  <script src="../js/demo/datatables-demo.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="../js/demo/datatables-demo.js"></script>
 
 </body>
 
