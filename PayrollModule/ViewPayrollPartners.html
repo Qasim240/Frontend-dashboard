@@ -1201,136 +1201,68 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
-
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
+                
+
+
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-body">
-                            <h1 class="mb-4">View All Payroll Subscriber</h1>
+                            <h1 class="mb-4">Payroll Partners</h1>
                             <div class="table-responsive">
-                               <table class="table table-bordered data-table" id="subscriberTable" width="100%"
-                                    cellspacing="0">
+                                <table class="table table-bordered data-table" id="partnerTable" width="100%" cellspacing="0">
                                     <thead>
-                                        <tr>
-                                            <th>SN</th>
-                                            <th>Country</th>
-                                            <th>Company Name</th>
-                                            <th>Staff Strength</th>
-                                            <th>Contact Person</th>
-                                            <th>Contact Person Email</th>
-                                            <th>Contact Person Phone</th>
-                                            <th>Subscription Status</th>
-                                            <th>Expiry Date</th>
-                                            <th>Last Renewal Date</th>
-                                            <th>Date Added</th>
-                                            <th>Onboarded By</th>
-                                            <th>Payment Method</th>
-                                            <th>Action</th>
-                                        </tr>
+                                      <tr>
+                                        <th>SN</th>
+                                        <th>Country</th>
+                                        <th>Partner Company Name</th>
+                                        <th>Total Partner Subscribers</th>
+                                        <th>Contact Person</th>
+                                        <th>Contact Person Email</th>
+                                        <th>Contact Person Phone</th>
+                                        <th>Partner Status</th>
+                                        <th>Date Added</th>
+                                        <th>Payment Card Status</th>
+                                        <th>Created By</th>
+                                        <th>Last Updated</th>
+                                        <th>Action</th>
+                                      </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Nigeria</td>
-                                            <td>ABC Company</td>
-                                            <td>50</td>
-                                            <td>John Doe</td>
-                                            <td>johndoe@example.com</td>
-                                            <td>08012345678</td>
-                                            <td>Active</td>
-                                            <td>2024-05-13</td>
-                                            <td>2023-05-13</td>
-                                            <td>2023-05-13</td>
-                                            <td>Admin User</td>
-                                            <td>Paystack</td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">
-                                                        Action
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
-                                                        <a class="dropdown-item" href="#">View Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Activate Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Deactivate Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Suspend Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Renew Subscriber</a>
-                                                    </div>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>United States</td>
+                                        <td>ABC Partner</td>
+                                        <td>25</td>
+                                        <td>John Doe</td>
+                                        <td>johndoe@example.com</td>
+                                        <td>08012345678</td>
+                                        <td>Active</td>
+                                        <td>2023-05-13</td>
+                                        <td>Active</td>
+                                        <td>Admin User</td>
+                                        <td>2023-05-13</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Action
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                  <a class="dropdown-item" href="#">View Partner</a>
+                                                  <a class="dropdown-item" href="#">Edit Partner</a>
+                                                  <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                  <a class="dropdown-item" href="#">Activate Partner</a>
                                                 </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>United States</td>
-                                            <td>XYZ Company</td>
-                                            <td>100</td>
-                                            <td>Jane Doe</td>
-                                            <td>janedoe@example.com</td>
-                                            <td>08098765432</td>
-                                            <td>Inactive</td>
-                                            <td>N/A</td>
-                                            <td>2022-05-14</td>
-                                            <td>2023-05-14</td>
-                                            <td>Admin User</td>
-                                            <td>Stripe</td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">
-                                                        Action
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
-                                                        <a class="dropdown-item" href="#">View Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Activate Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Deactivate Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Suspend Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Renew Subscriber</a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Canada</td>
-                                            <td>LMN Company</td>
-                                            <td>20</td>
-                                            <td>Mike Smith</td>
-                                            <td>mikesmith@example.com</td>
-                                            <td>08011112222</td>
-                                            <td>Pending</td>
-                                            <td>N/A</td>
-                                            <td>N/A</td>
-                                            <td>2023-05-12</td>
-                                            <td>Admin User</td>
-                                            <td>PayPal</td>
-                                            <td>
-                                                <div class="dropdown">
-                                                    <button class="btn btn-secondary dropdown-toggle" type="button"
-                                                        id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false">
-                                                        Action
-                                                    </button>
-                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
-                                                        <a class="dropdown-item" href="#">View Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Activate Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Deactivate Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Suspend Subscriber</a>
-                                                        <a class="dropdown-item" href="#">Renew Subscriber</a>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
+                                              </div>
+                                              
+                                        </td>
+                                      </tr>
                                     </tbody>
-                                </table>
-
+                                  </table>
+                                  
                             </div>
 
 
