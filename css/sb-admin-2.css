@@ -819,7 +819,7 @@ pre code {
 }
 @media (max-width: 759px) {
   .sidebar .nav-item .sub-nav-link{
-    width: 10rem !important;
+    width: 14rem !important;
   }
 }
 @media (min-width: 576px) {
