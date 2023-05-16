@@ -101,7 +101,7 @@
                 <div class=" py-2 collapse-inner rounded">
                     <a class="collapse-item " href="../management/CandidateManagement.html">Candidate
                         Management</a>
-                    <a class="collapse-item active" href="../management/CompanyManagement.html">Company
+                    <a class="collapse-item " href="../management/CompanyManagement.html">Company
                         Management</a>
                     <a class="collapse-item " href="../management/PartnerManagement.html">Partner Management</a>
                     <a class="collapse-item " href="../management/ResellerManagement.html">Reseller
@@ -1191,6 +1191,60 @@
       <!-- Main Content -->
       <div class="container my-4">
         <h1>Achievement Form</h1>
+        <div class="row mb-5">
+            <div class="col-lg-5">
+
+                <div class="row">
+                    <!-- <div class="col-lg-6">
+                                    <button class="btn btn-primary mb-2 w-100 mr-3" data-toggle="modal"
+                                        data-target="#newUserModal">
+                                        Create Partner
+                                    </button>
+                                </div> -->
+                    <div class="col-lg-6">
+                        <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
+                            Export Raw Data
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-2">
+                <div class="text-center my-lg-0 my-3">
+                    <p class="mb-0">Total Candidates: 350</p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group mb-0 d-flex">
+                            <select class="form-control mb-3" id="dateFilter">
+                                <option disabled selected value="all">Filter by</option>
+                                <option value="last24">Last 24 Hours</option>
+                                <option value="last7">Last 7 Days</option>
+                                <option value="last30">Last 30 Days</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="">
+                            <input cl type="date" id="Custom" name="Custom" class=" mb-3 form-control">
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+        </div>
         <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#addFieldModal">Add New Field</button>
         <div class="table-responsive">
             <table class="table table-bordered data-table" id="dataTable" width="100%"
@@ -1346,6 +1400,7 @@
 
 
   <script>
+    
    // Update video button click event
    $("#update-video-btn").click(function() {
         // Show file upload dialog and get the selected file
@@ -1366,21 +1421,22 @@
         input.click();
       });
   </script>
-  <!-- Bootstrap core JavaScript-->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="../js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
+   <!-- Bootstrap core JavaScript-->
+   <script src="../vendor/jquery/jquery.min.js"></script>
+   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+   <!-- Core plugin JavaScript-->
+   <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+ 
+   <!-- Custom scripts for all pages-->
+   <script src="../js/sb-admin-2.min.js"></script>
+ 
+   <!-- Page level plugins -->
+   <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+   <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+ 
+   <!-- Page level custom scripts -->
+   <script src="../js/demo/datatables-demo.js"></script>
 
 </body>
 
