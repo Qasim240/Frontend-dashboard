@@ -1,0 +1,568 @@
+>Login Page
+Please use the following as the reference for the login page.
+
+>Password reset page
+Please use the following as the reference for the password reset page
+
+>Subscription Management
+>>Manage Cleon Trials
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Subscribed Modules, Timestamp, Expiry Date, Action (Suspend, Extend).
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+>>Manage Subscription Plans
+This is a table with only 4 rows, the table as the following columns: SN, Package Name (Free, Basic, Standard, Premium, Enterprise), Billing (Monthly, Yearly), Allowed Users, Last Updated, Updated By, Action (Edit, Delete).
+
+The top of the table should have a button that says: Add New Plan.
+
+The Add new plan should open a page that is a web form, with the following fields: Package Name, Supported Billing Cycle, Allowed Users, Submit.
+
+>>Active Subscriptions
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Subscribed Modules, Timestamp, Billing Cycle, Next Due Date, Payment Mode (Colour Coded: Card, Transfer, Cheque), Action (Suspend, Renew).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+The top of the table should have a button that says: Activate Subscription.
+
+The activate subscription page is a web form with the following fields: Select company, Select Module(s), Select Billing Cycle, Select Payment Method, Activate.
+
+>>Expired Subscriptions
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Subscribed Modules, Subscription Date, Expiry Date, Billing Cycle, Action (Renew).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+
+>Financial Management
+>>Company Payments
+This is a table with the following columns: SN, Company Name, Location, Amount, Subscribed Module(s), Billing Cycle (Monthly, Yearly), Payment Mode (Colour Coded: Card, Transfer, Cheque), Purpose (Subscription, Renewal), Timestamp.
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+The top of the table should have a button that says: Add New Payment.
+
+The Add New Payment page should be a web form with the following fields: Select Company, Select Billing Cycle, Select Module(s), Amount (The Amount Field should automatically populate), Select Payment Method, Select Purpose (Subscription, Renewal), Confirm Payment.
+
+>>Payments by Modules
+
+This is a table that has the following columns: SN, Module Name (There will be only 13 rows here - with all the modules), Total Subscribers, Total Payment Received. Total Amount Received, Action (View Payments).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+The View Payments Action menu should open a module payment table with payment for each module.
+
+This Module payment table is a table with the following columns: SN, Company Name, Location, Amount, Payment Mode (Colour Coded: Card, Transfer, Cheque), Purpose (Subscription, Renewal), Timestamp. The top of the table should have a button that says: Add Module Payment.
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+The Add Module Payment page should be a web form with the following fields: Select Company, Select Billing Cycle, Amount (The Amount Field should automatically populate), Select Payment Method, Select Purpose (Subscription, Renewal), Confirm Payment.
+
+>>Marketplace Inflow
+This is a table with the following columns: SN, Partner Company, Location First Name, Last Name, Email, Phone, Portfolio, Inflow Amount, Cleon Commission, Timestamp, Payment Mode (Colour Coded: Card, Transfer, Cheque). 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar. 
+
+>>Partners Earnings
+This is a table with the following columns: SN, Partner Company, Location, First Name, Last Name, Email, Phone, Total Earnings, Last Updated, Payment Mode (Colour Coded: Card, Transfer, Cheque).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.  
+
+>>Partners Withdrawals
+This is a table with the following columns: SN, Partner Company, Location First Name, Last Name, Email, Phone, Amount Withdrawn, Timestamp.
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.  
+
+>>Cleon Partner Commission
+This is a table with the following columns: SN, Partner Company, Location First Name, Last Name, Email, Phone, Total Commission. Last Updated.
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar. 
+
+>>Reseller Earnings
+This is a table with the following columns: SN, Reseller Company, Location, First Name, Last Name, Email, Phone, Module, Customer Name, Amount Earned, Timestamp.
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar. 
+
+>>Reseller Withdrawals
+This is a table with the following columns: SN, Reseller Company, Location, First Name, Last Name, Email, Phone, Amount Withdrawn, Timestamp.
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.  
+
+>>Reseller Sales
+This is a table with the following columns: SN, Reseller Company, Location, Reseller Customer, Customer Location, Module(s), Billing Cycle (Monthly, Yearly), Amount Paid, Timestamp, Action (Suspend).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.  
+
+The top of the page should have a button: Add New Sale.
+
+The add new sale button should open a web page with a web form having the following fields: Select Customer, Enter Customer Company Name, Company Email, Company Phone, Company Website, Contact Person First Name, Contact Person Last Name, Contact Person Email, Contact Person Phone, Select Location, Select Module(s), Select Billing Cycle, Amount (The Amount Field should automatically populate), Submit.
+
+>>Manage Partner Wallet
+This is a table with the following columns: SN, Partner Company, Location, Transaction Type (Colour Coded: Credit, Debit), Current Balance, Date.
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.  
+
+>>Manage Reselller Wallet
+This is a table with the following columns: SN, Reseller Company, Location, Transaction Type (Colour Coded: Credit, Debit), Current Balance, Date.
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar. 
+
+
+
+>HR Administration
+>>HR Admin Subscriber Manager
+>>>>Create New HR Admin Subscriber
+This should be a web form with the following fields: Select Company, Enter Total Users, Select Billing Cycle, Amount (The Amount Field should automatically populate), Payment Mode (Colour Coded: Card, Transfer, Cheque), Confirm Payment Button.
+
+>>>>View HR Admin Subscribers
+This is a table that has the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Total Users, Billing Cycle, Expiration Date, Action (Suspend, Renew) 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Subscriber"
+The add new subscriber page should open the Create New HR Admin Subscriber page.
+
+>>>>Create HR Admin Partner
+This should be a web form with the following fields: Enter Company Name, Select Location, First Name, Last Name, Email, Phone, Submit.
+
+>>>>View HR Admin Partners
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Action (Suspend)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Partner"
+The add new subscriber page should open the Create New HR Admin Partner page.
+
+>>Manage Intro Videos
+This is a web page with embedded videos; please embed like 3 different videos with a video player. Each embedded video should have a an option to edit and upload a replacement video.
+
+There should be a button at the top to add new video.
+
+>>Manage Documents
+This is a table with the following columns: SN, Document Title, File Type (Word, PDF, PPT), Timestamp, Uploaded by, Last Updated, Action (Replace, Download, Delete) 
+
+The top of the table should have a button to "Add New Document"
+
+The add new document page is a web form with the following fields: Enter Document Title, Select File to Upload, Submit. 
+
+>>Manage Company Calendar
+This is a table with the following columns: SN, Event Type (Birthday, Marriage, Holiday), Event Title, Date, Assigned Department, Action (Edit, Delete).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+The top of the table should have a button to "Add New Event".
+
+The add new event page should be a web form with the following fields: Select Event Type, Enter Event Title, Select Date (Calendar Selection), Select Department, Submit Button.
+
+>>Manage Documentary
+This is a web page with embedded videos; please embed like 3 different videos with a video player. Each embedded video should have a an option to edit and upload a replacement video.
+
+There should be a button at the top to add new documentary.
+
+>>Manage Gallery
+This is a web page gallery with several images. The top of the page should have a button to add new image.
+
+The add new image should allow fields for Image title, and select an image file.
+
+>>Manage Peer Review (Review Window, KPI Scorecard, )
+This a table with the following columns: SN, Company Name, Location, Review Start Date, Review End Date, Total KPI Scorecard, Action (Edit) 
+
+>Leave Management
+>>Leave Subscriber Manager
+>>>>Create New Leave Subscriber
+This should be a web form with the following fields: Select Company, Enter Total Users, Select Billing Cycle, Amount (The Amount Field should automatically populate), Payment Mode (Colour Coded: Card, Transfer, Cheque), Confirm Payment Button.
+
+>>>>View Leave Subscribers
+This is a table that has the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Total Users, Billing Cycle, Expiration Date, Action (Suspend, Renew) 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Subscriber"
+The add new subscriber page should open the Create New Leave Subscriber page.
+
+>>>>Create Leave Partner
+This should be a web form with the following fields: Enter Company Name, Select Location, First Name, Last Name, Email, Phone, Submit.
+
+>>>>View Leave Partners
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Action (Suspend)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Partner"
+The add new subscriber page should open the Create Leave Partner page.
+
+>>Manage Leave Configuration 
+This is a table with the following columns: SN, Company Name, Location, Overlap Setting (Enabled, Disabled), Sparsity Setting (Enabled, Disabled), Request Start, Request End, Approval Start, Approval End, Action (Edit)
+
+>>Manage Leave Calendar 
+(Please Remove This Menu - It is now deprecated)
+
+>>View Leave Requests
+(Please Remove This Menu - It is now deprecated)
+
+>>View Leave Approval Log
+(Please Remove This Menu - It is now deprecated)
+
+>e-Learning Management
+>>e-Learning Subscriber Manager
+>>>>Create New e-Learning Subscriber
+This should be a web form with the following fields: Select Company, Enter Total Users, Select Billing Cycle, Amount (The Amount Field should automatically populate), Payment Mode (Colour Coded: Card, Transfer, Cheque), Confirm Payment Button.
+
+>>>>View e-Learning Subscribers
+This is a table that has the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Total Users, Billing Cycle, Expiration Date, Action (Suspend, Renew) 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Subscriber"
+The add new subscriber page should open the Create New e-Learning Subscriber page.
+
+>>>>Create e-Learning Partner
+This should be a web form with the following fields: Enter Company Name, Select Location, First Name, Last Name, Email, Phone, Submit.
+
+>>>>View e-Learning Partners
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Action (Suspend)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Partner"
+The add new subscriber page should open the Create e-Learning Partner page.
+
+>>Manage Course Categories
+This is a table with the following columns: SN, Category Title, Description, Timestamp, Created By, Last Updated, Action (Edit, Delete)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Category"
+
+The add new category page should be a web form with fields: Enter Category Title, Description, Submit.
+
+>>Manage Facilitators
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Type (Internal, External, Marketplace), Timestamp, Action (Suspend).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Facilitator"
+
+The add new facilitator page is a web form with the following fields: Select Company, Select Facilitator, Enter First Name, Enter Last Name, Enter Email, Enter Phone, Select Type, Submit.
+
+>>Manage Courses 
+This is a table with the following columns: SN, Company Name, Location, Course Title, Description, Total Modules, Total Enrolments, Rating (Use 5 stars), Type (Cleon, Marketplace, Company), Action (Edit, Remove).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Course"
+
+The add new course page should be a web form with fields: Select Location, Course Title, Description, Assignment (Text Area), Assignment Format, Select Currency, Price, Submit.
+
+>>Manage Assignments
+This is a table with the following columns: SN, Company Name, Location, Course Title, Assignment, Assignment Format, Action (Edit).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+>Verification
+>>Verification Subscriber Manager
+>>>>Create New Verification Subscriber
+This should be a web form with the following fields: Select Company, Enter Total Users, Select Billing Cycle, Amount (The Amount Field should automatically populate), Payment Mode (Colour Coded: Card, Transfer, Cheque), Confirm Payment Button.
+
+>>>>View Verification Subscribers
+This is a table that has the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Total Users, Billing Cycle, Expiration Date, Action (Suspend, Renew) 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Subscriber"
+The add new subscriber page should open the Create New Verification Subscriber page.
+
+>>>>Create Verification Partner
+This should be a web form with the following fields: Enter Company Name, Select Location, First Name, Last Name, Email, Phone, Submit.
+
+>>>>View Verification Partners
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Action (Suspend)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Partner"
+The add new subscriber page should open the Create Verification Partner page.
+
+>>Manage Employee Data (Please remove this menu, it is now deprecated)
+>>Completed Verification (Please remove this menu, it is now deprecated)
+
+>Health Management
+>>Manage Hospitals 
+This is a table with the following columns: SN, Hospital Name, Specialty, Country, Address, First Name, Last Name, Email, Phone, Ratings (Use 5 stars), Action (Edit, Delete)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Hospital"
+
+The add new hospital button should open a web page with the following fields: Enter Hospital Name, Select Specialty, Select Country, Enter Address, Contact Person First Name, Contact Person Last Name, Contact Email, Contact Phone, Submit.
+
+>>Manage HMOs
+This is a table with the following columns: SN, HMO Name, Country, First Name, Last Name, Email, Phone, Ratings (Use 5 stars), Action (Edit, Delete)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New HMO"
+
+The add new hmo button should open a web page with the following fields: Enter HMO Name, Select Country, Contact Person First Name, Contact Person Last Name, Contact Email, Contact Phone, Submit.
+
+>>Manage HMO Packages
+This is a table with the following columns: SN, HMO Company, Location, Total Hospitals, Total Packages, Action (View Packages).
+
+The View Packages action should open a table with the following columns: SN, Package Name, Total Enroless, Total Checkins.
+
+>>Manage Enrolments
+This is a table with the following columns: SN, HMO Name, Country, Package Name, Total Hospitals, Total Enrolments, Total Checkins, Action (View Hospitals, View Enrolments)
+
+The view hospital action menu should open a page with a table with the following columns: SN, Hospital Name, Location, Address, Total Checkins.
+
+The View enrolments action menu should open a page with a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Enrolment Date.
+
+>>Manage Hospital Checkins
+This is a table with the following columns: SN, HMO Name, Country, Package Name, Hospital Name, First Name, Last Name, Email, Phone, Checkin Date, Rating (User 5 stars).
+
+>Manage Assessment 
+>>Assessment  Subscriber Manager
+>>>>Create New Assessment Subscriber
+This should be a web form with the following fields: Select Company, Enter Total Users, Select Billing Cycle, Amount (The Amount Field should automatically populate), Payment Mode (Colour Coded: Card, Transfer, Cheque), Confirm Payment Button.
+
+>>>>View Assessment Subscribers
+This is a table that has the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Total Users, Billing Cycle, Expiration Date, Action (Suspend, Renew) 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Subscriber"
+The add new subscriber page should open the Create New Assessment Subscriber page.
+
+>>>>Create Assessment Partner
+This should be a web form with the following fields: Enter Company Name, Select Location, First Name, Last Name, Email, Phone, Submit.
+
+>>>>View Assessment Partners
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Action (Suspend)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Partner"
+The add new subscriber page should open the Create Assessment Partner page.
+
+>>Created Assessments
+This is a table with the following columns: SN, Company Name, Location, Assessment Title, Total Questions, Action (Edit, Delete).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+
+>HR Advisory
+>>HR Advisory Subscriber Manager
+>>>>Create New HR Advisory Subscriber
+This should be a web form with the following fields: Select Company, Enter Total Users, Select Billing Cycle, Amount (The Amount Field should automatically populate), Payment Mode (Colour Coded: Card, Transfer, Cheque), Confirm Payment Button.
+
+>>>>View HR Advisory Subscribers
+This is a table that has the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Total Users, Billing Cycle, Expiration Date, Action (Suspend, Renew) 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Subscriber"
+The add new subscriber page should open the Create New HR Advisory Subscriber page.
+
+>>>>Create HR Advisory Partner
+This should be a web form with the following fields: Enter Company Name, Select Location, First Name, Last Name, Email, Phone, Submit.
+
+>>>>View HR Advisory Partners
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Action (Suspend)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Partner"
+The add new subscriber page should open the Create HR Advisory Partner page.
+
+>>Manage FAQs
+This is a table with the following columns: SN, Timestamp, Question, Answer, Total Views, Action (Edit, Delete)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New FAQ"
+
+The add new faq page should be a web form with the following fields: Enter Question, Enter Answer, Submit.
+
+>>Manage Knowledgebase
+This is a table with the following columns: SN, Timestamp, Knowledge Title, Total Views, Action (View, Edit, Delete)
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Knowledge"
+
+The add new knowledge page should be a web page with a text editor: Enter Title, Create Page (HTML Text Editor), Submit.
+
+>>View Consulting Calendar
+This is a table with the following columns: SN, Company Name, Consultant First Name, Consultant Last Name, Email, Phone, Week days Availability, Hourly Availability, Action (View Calendar)
+
+The view calendar should open a page with a full page calendar with highlighted days to show which days the consultant has been booked on the calendar.
+
+>>Booked Consulting (Accepted, Declined, In Progress, Completed, Ratings)
+This is a table with the following columns: SN, Company Name, Consultant First Name, Consultant Last Name, Email, Phone, Booked By, Timestamp, Status (Accepted, Declined, In Progress, Completed), Ratings (Use 5 Stars).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+
+>Asset Acquisition Management
+>>Manage Requests 
+This is a table with the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Asset Type, Asset Amount, Guarantors First Name, Guarantors Last Name, Guarantors Email, Guarantors Phone, Status (Approved, Rejected), Action (Download Invoice, Download Guarantors Form).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+>>Manage Asset Guarantors (Please remove this menu - it is now deprecated)
+
+>Performance Management
+>>Performance Subscriber Manager
+>>>>Create New Performance Subscriber
+This should be a web form with the following fields: Select Company, Enter Total Users, Select Billing Cycle, Amount (The Amount Field should automatically populate), Payment Mode (Colour Coded: Card, Transfer, Cheque), Confirm Payment Button.
+
+>>>>View Performance Subscribers
+This is a table that has the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Total Users, Billing Cycle, Expiration Date, Action (Suspend, Renew) 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Subscriber"
+The add new subscriber page should open the Create New Performance Subscriber page.
+
+>>View Appraisal Window
+This is a table with the following columns: SN, Company Name, Location, Appraisal Start Date, Appraisal End Date, Total KPI Score Card.
+
+>>View KPI Scorecard
+This is a table with the following columns: SN, Company Name, Location, Score Card Title, Assigned Department, Timestamp.
+
+
+>Internal Control Management
+>>Internal Control Subscriber Manager
+>>>>Create New Performance Subscriber
+This should be a web form with the following fields: Select Company, Enter Total Users, Select Billing Cycle, Amount (The Amount Field should automatically populate), Payment Mode (Colour Coded: Card, Transfer, Cheque), Confirm Payment Button.
+
+>>>>View Internal Control Subscribers
+This is a table that has the following columns: SN, Company Name, Location, First Name, Last Name, Email, Phone, Total Users, Billing Cycle, Expiration Date, Action (Suspend, Renew) 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Subscriber"
+The add new subscriber page should open the Create New Internal Control Subscriber page.
+
+>>View Processes
+This is a table with the following columns: SN, Company Name, Location, Process Title, Process Date, Start Time, End Time, Status (Completed, Pending, Missed), Action (Edit, Delete).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+>>View Control Chart (Please remove this menu - it is now deprecated).
+
+>Poke Management (Please remove this menu - it is now deprecated)
+>>Manage Poke (Please remove this menu - it is now deprecated)
+>>View Poke Usage (Please remove this menu - it is now deprecated)
+
+>Partners Management
+>>Manage Partners
+This is a table with the following columns: SN, Partner Company, Location, Company Phone, Company Email, Company Website, First Name, Last Name, Email, Phone, Portfolio Modules, KYC Status (Colour-Coded: Unverified, Verified), Action (Download KYC Docs, Suspend).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Partner".
+
+The add new partner page should be a web form with the following form fields: Partner Company, Select Country, Enter Company Phone, Enter Company Email, Enter Company Website, Enter First Name, Enter Last Name, Enter Email, Enter Phone, Submit.
+
+>>Manage Portfolio (Proposal Letter, Pricing)
+This is a table with the following columns: SN, Partner Company, Location, Module, Pricing, Action (View Proposal Letter).
+
+>>Partner Ratings
+This is a table with the following columns: SN, Partner Company, Location, Module, Ratings (User 5 stars).
+
+>>Manage Bids
+This is a table with the following columns: SN, Partner Company, Location, Module, Bid Price, Bid Status (Colour Coded: Rejected, Accepted), Timestamp.
+
+>>Manage Hires
+This is a table with the following columns: SN, Partner Company, Location, Module, Hiring Company Name, Timestamp, Hire Price, Job Status (Colour-Coded: Completed, In-Progress), Rating (Use 5 star).
+
+>>Partner Wallet
+This is a table with the following columns: SN, Partner Company, Location, Wallet Balance, Total Withdrawal, Total Earning, Last Activity.
+
+>>Partner Instructions (Remove this menu - it is now deprecated)
+
+>Reseller Management
+>>Manage Resellers
+This is a table with the following columns: SN, Reseller Company, Location, Company Phone, Company Email, Company Website, First Name, Last Name, Email, Phone, Portfolio Modules, KYC Status (Colour-Coded: Unverified, Verified), Action (Download KYC Docs, Suspend).
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Resellers".
+
+The add new Resellers page should be a web form with the following form fields: Reseller Company, Select Country, Enter Company Phone, Enter Company Email, Enter Company Website, Enter First Name, Enter Last Name, Enter Email, Enter Phone, Submit.
+
+>>Reseller Customers
+This is a table with the following columns: SN, Reseller Company, Location, Customer Company, Customer Email, Customer Phone, Subscribed Module, Billing Cycle, Payment Status (Paying, Not Paying), Timestamp, Action (Suspend) 
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+The top of the table should have a button to "Add New Reseller Customer".
+
+The add new reseller customer should open a web page with form fields: Select Reseller, Enter Customer Company Name, Customer Email, Customer Phone, Submit.
+
+>>Reseller Sales
+This is a table with the following columns: SN, Reseller Company, Location, Customer Company, Subscribed Module, Paid Amount, Payment Method (Card, Transfer, Cheque), Timestamp.
+
+The table should have a filter to view by last 24 hours, last 7 days, last one month, custom calendar.
+
+>>Reseller Wallet
+This is a table with the following columns: SN, Reseller Company, Location, Wallet Balance, Total Withdrawal, Total Earning, Last Activity.
+
+
+>Audit Trail Data
+>>Global Audit Trail
+>>>>Admin Authentication Log
+This is a table with the following column: SN, First Name, Last Name, Email, Phone, Authetication Status (Successful, Failed), Timestamp.
+
+>>>>Admin Session Log
+This is a table with the following column: SN, First Name, Last Name, Email, Phone, Session Date, Session Start Time, Session End Time, Total Duration.
+
+>>>>Admin Activity Log
+This is a table with the following column: SN, First Name, Last Name, Email, Phone, Action, Timestamp.
+
+>>>>Admin Password Reset Log
+This is a table with the following column: SN, First Name, Last Name, Email, Phone, Reset Status (Successful, Failed), Timestamp.
+
+
+>>Company Audit Trail
+>>>>Company Authentication Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Authetication Status (Successful, Failed), Timestamp.
+
+>>>>Company Session Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Session Date, Session Start Time, Session End Time, Total Duration.
+
+>>>>Company Activity Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Action, Timestamp.
+
+>>>>Company Password Reset Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Reset Status (Successful, Failed), Timestamp.
+
+>>Partner Audit Trail
+>>>>Partner Authentication Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Authetication Status (Successful, Failed), Timestamp.
+
+>>>>Partner Session Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Session Date, Session Start Time, Session End Time, Total Duration.
+
+>>>>Partner Activity Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Action, Timestamp.
+
+>>>>Partner Password Reset Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Reset Status (Successful, Failed), Timestamp.
+
+>>Reseller Audit Trail
+>>>>Reseller Authentication Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Authetication Status (Successful, Failed), Timestamp.
+
+>>>>Reseller Session Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Session Date, Session Start Time, Session End Time, Total Duration.
+
+>>>>Reseller Activity Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Action, Timestamp.
+
+>>>>Reseller Password Reset Log
+This is a table with the following column: SN, Company Name, Location, First Name, Last Name, Email, Phone, Reset Status (Successful, Failed), Timestamp.
+
+
+>>Candidate Audit Trail
+>>>>Candidate Authentication Log
+This is a table with the following column: SN, First Name, Last Name, Email, Phone, Authetication Status (Successful, Failed), Timestamp.
+
+>>>>Candidate Session Log
+This is a table with the following column: SN, First Name, Last Name, Email, Phone, Session Date, Session Start Time, Session End Time, Total Duration.
+
+>>>>Candidate Activity Log
+This is a table with the following column: SN, First Name, Last Name, Email, Phone, Action, Timestamp.
+
+>>>>Candidate Password Reset Log
+This is a table with the following column: SN, First Name, Last Name, Email, Phone, Reset Status (Successful, Failed), Timestamp.
+
+
+> General Settings 
+>>Role Based Manager
+This is a page splitted into 40/60 columns; 
+
+The 40 column on the left has a table with the following columns: SN, Role Name, Total Functionalities, Total Assignees, Action (Edit, Delete).
+
+The 60 column on the right has a title for "Create New Role", with the form field "Enter Role Title", followed by several checkboxes for features (Just labeled all checkboxes as Feature1, Feature2, Feature3, Feature4, etc. 
+
+>>API Management
+>>Content Management
+>>>>Manage Textual Contents
+>>>>Manage Images (Logo)
+>>>>Manage Footer
+>>>>Manage Email Templates
