@@ -8,7 +8,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Recruitment Introductory Video</title>
+  <title>Create New HR Admin Subscriber</title>
 
   <!-- Custom fonts for this template -->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -390,29 +390,26 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#HRAdministration"
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#HRAdministration"
             aria-expanded="true" aria-controls="Dashboard">
             <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
             <span>HR Administration</span>
         </a>
-        <div id="HRAdministration" class="collapse " aria-labelledby="headingTwo"
+        <div id="HRAdministration" class="collapse show" aria-labelledby="headingTwo"
             data-parent="#accordionSidebar">
             <div class="py-2 collapse-inner rounded">
                 <div class=" ">
-                    <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse"
+                    <a class="nav-link  w-12rem sub-nav-link" href="#" data-toggle="collapse"
                         data-target="#HRAdminSubscriberManager" aria-expanded="true"
                         aria-controls="GlobalDashboard">
                         <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
                         <span>HR Admin Subscriber Manager</span>
                     </a>
-                    <div id="HRAdminSubscriberManager" class="collapse " aria-labelledby="headingTwo"
+                    <div id="HRAdminSubscriberManager" class="collapse show" aria-labelledby="headingTwo"
                         data-parent="#Dashboard">
                         <div class="">
                             <div class="collapse-inner">
-                                <a class="collapse-item"
-                                    href="../HRAdminSubscriberManager/CreateNewHRAdminSubscriber.html">Create
-                                    New
-                                    HR Admin Subscriber</a>
+                                <a class="collapse-item active" href="../HRAdminSubscriberManager/CreateNewHRAdminSubscriber.html">Create New HR Admin Subscriber</a>
                                 <a class="collapse-item"
                                     href="../HRAdminSubscriberManager/ViewHRAdminSubscribers.html">View HR Admin
                                     Subscribers</a>
@@ -1256,7 +1253,59 @@ Admin Management
 
         <!-- Begin Page Content -->
         <div class="container py-2">
-          <h1 class="text-center mb-3">This Page is not Available yet</h1>
+            <div class="card">
+                <div class="card-body">
+                          <div class="col-md-10 mx-auto">
+                            <form class="border p-4 rounded-lg bg-light">
+                                <div class="form-group">
+                                  <label for="selectCompany">Select Company</label>
+                                  <select class="form-control" id="selectCompany">
+                                    <option>Company A</option>
+                                    <option>Company B</option>
+                                    <option>Company C</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="totalUsers">Enter Total Users</label>
+                                  <input type="number" class="form-control" id="totalUsers" placeholder="Enter total users">
+                                </div>
+                                <div class="form-group">
+                                  <label for="selectBillingCycle">Select Billing Cycle</label>
+                                  <select class="form-control" id="selectBillingCycle">
+                                    <option>Monthly</option>
+                                    <option>Quarterly</option>
+                                    <option>Yearly</option>
+                                  </select>
+                                </div>
+                                <div class="form-group">
+                                  <label for="amount">Amount</label>
+                                  <input type="text" class="form-control" id="amount" readonly>
+                                </div>
+                                <div class="form-group">
+                                  <label for="paymentMode">Payment Mode</label>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMode" id="cardPayment" value="Card">
+                                    <label class="form-check-label" for="cardPayment">Card</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMode" id="transferPayment" value="Transfer">
+                                    <label class="form-check-label" for="transferPayment">Transfer</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMode" id="chequePayment" value="Cheque">
+                                    <label class="form-check-label" for="chequePayment">Cheque</label>
+                                  </div>
+                                </div>
+                                <div class="text-right">
+                                    <button type="submit" class="btn btn-primary">Confirm Payment</button>
+                                </div>
+                              </form>
+                              
+                          </div>
+                      
+
+                </div>
+            </div>
         
         </div>
         <!-- /.container-fluid -->
