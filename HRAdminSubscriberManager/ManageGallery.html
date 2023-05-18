@@ -1,33 +1,49 @@
-<!DOCTYPE html>
 <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  
+    <title>documentary</title>
+  
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="../css/sb-admin-2.css" rel="stylesheet">
+  
+  
+    <!-- Custom styles for this page -->
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+ <style>
+    iframe{
+        width: 100%;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    .image-box {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
 
-  <title>Recruitment Introductory Video</title>
-
-  <!-- Custom fonts for this template -->
-  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="../css/sb-admin-2.css" rel="stylesheet">
-
-
-  <!-- Custom styles for this page -->
-  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
-</head>
-
-<body id="page-top">
-  <!-- Page Wrapper -->
-  <div id="wrapper">
-   <!-- Sidebar -->
+    .image-box img {
+      width: 100%;
+      height: auto;
+    }
+ </style>
+  </head>
+  
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+       <!-- Sidebar -->
    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     <!-- Sidebar - Brand -->
     <div class="m-4">
@@ -390,45 +406,36 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#HRAdministration"
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#HRAdministration"
             aria-expanded="true" aria-controls="Dashboard">
             <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
             <span>HR Administration</span>
         </a>
-        <div id="HRAdministration" class="collapse " aria-labelledby="headingTwo"
+        <div id="HRAdministration" class="collapse show" aria-labelledby="headingTwo"
             data-parent="#accordionSidebar">
             <div class="py-2 collapse-inner rounded">
                 <div class=" ">
-                    <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse"
+                    <a class="nav-link  w-12rem sub-nav-link" href="#" data-toggle="collapse"
                         data-target="#HRAdminSubscriberManager" aria-expanded="true"
                         aria-controls="GlobalDashboard">
                         <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
                         <span>HR Admin Subscriber Manager</span>
                     </a>
-                    <div id="HRAdminSubscriberManager" class="collapse " aria-labelledby="headingTwo"
+                    <div id="HRAdminSubscriberManager" class="collapse show" aria-labelledby="headingTwo"
                         data-parent="#Dashboard">
                         <div class="">
                             <div class="collapse-inner">
-                                <a class="collapse-item"
-                                    href="../HRAdminSubscriberManager/CreateNewHRAdminSubscriber.html">Create
-                                    New
-                                    HR Admin Subscriber</a>
-                                <a class="collapse-item"
-                                    href="../HRAdminSubscriberManager/ViewHRAdminSubscribers.html">View HR Admin
-                                    Subscribers</a>
-                                <a class="collapse-item"
-                                    href="../HRAdminSubscriberManager/CreateHRAdminPartner.html">Create HR Admin
-                                    Partner</a>
-                                <a class="collapse-item"
-                                    href="../HRAdminSubscriberManager/ViewHRAdminPartners.html">View HR Admin
-                                    Partners</a>
+                                <a class="collapse-item " href="../HRAdminSubscriberManager/CreateNewHRAdminSubscriber.html">Create New HR Admin Subscriber</a>
+                                <a class="collapse-item " href="../HRAdminSubscriberManager/ViewHRAdminSubscribers.html">View HR Admin Subscribers</a>
+                                <a class="collapse-item" href="../HRAdminSubscriberManager/CreateHRAdminPartner.html">Create HR Admin Partner</a>
+                                <a class="collapse-item" href="../HRAdminSubscriberManager/ViewHRAdminPartners.html">View HR Admin Partners</a>
 
                             </div>
                         </div>
 
 
                     </div>
-                    <a class="collapse-item" href="../HRAdminSubscriberManager/ManageIntroVideos.html">
+                    <a class="collapse-item " href="../HRAdminSubscriberManager/ManageIntroVideos.html">
                         Manage Intro Videos
                     </a>
                     <a class="collapse-item" href="../HRAdminSubscriberManager/ManageDocuments.html">
@@ -437,10 +444,10 @@
                     <a class="collapse-item" href="../HRAdminSubscriberManager/ManageCompanyCalendar.html">
                         Manage Company Calendar
                     </a>
-                    <a class="collapse-item" href="../HRAdminSubscriberManager/ManageDocumentary.html">
+                    <a class="collapse-item " href="../HRAdminSubscriberManager/ManageDocumentary.html">
                         Manage Documentary
                     </a>
-                    <a class="collapse-item" href="../HRAdminSubscriberManager/ManageGallery.html">
+                    <a class="collapse-item active" href="../HRAdminSubscriberManager/ManageGallery.html">
                         Manage Gallery
                     </a>
                     <a class="collapse-item" href="../HRAdminSubscriberManager/ManagePeerReview.html">
@@ -1044,325 +1051,412 @@ Admin Management
 
 </ul>
 <!-- End of Sidebar -->
-
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-      <!-- Main Content -->
-      <div id="content">
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-          <!-- Sidebar Toggle (Topbar) -->
-          <form class="form-inline">
-            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-              <i class="fa fa-bars"></i>
-            </button>
-          </form>
-
-          <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                aria-label="Search" aria-describedby="basic-addon2" />
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
+  
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+           <!-- Topbar -->
+           <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+              <div class="text-center d-none d-md-inline">
+                  <button class="rounded-circle border-0 mb-0" id="sidebarToggle"><i class="fa fa-bars"></i></button>
               </div>
-            </div>
-          </form>
-
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
+              <!-- Sidebar Toggle (Topbar) -->
+              <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                  <i class="fa fa-bars"></i>
+              </button>
+  
+              <!-- Topbar Search -->
+              <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                   <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                      aria-label="Search" aria-describedby="basic-addon2" />
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
+                      <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                          <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search fa-sm"></i>
+                          </button>
+                      </div>
                   </div>
-                </form>
+              </form>
+  
+              <!-- Topbar Navbar -->
+              <ul class="navbar-nav ml-auto">
+  
+                  <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                  <li class="nav-item dropdown no-arrow d-sm-none">
+                      <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-search fa-fw"></i>
+                      </a>
+                      <!-- Dropdown - Messages -->
+                      <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                          <form class="form-inline mr-auto w-100 navbar-search">
+                              <div class="input-group">
+                                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                      <button class="btn btn-primary" type="button">
+                                          <i class="fas fa-search fa-sm"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown no-arrow mx-1 d-md-block d-none">
+                      <a class="nav-link" href="">
+                          Last login: May 6, 2023 at 10:30pm
+  
+                      </a>
+  
+                  </li>
+  
+                  <!-- Nav Item - Alerts -->
+                  <li class="nav-item dropdown no-arrow mx-1">
+                      <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fas fa-bell fa-fw"></i>
+                          <!-- Counter - Alerts -->
+                          <span class="badge badge-danger badge-counter">3+</span>
+                      </a>
+                      <!-- Dropdown - Alerts -->
+                      <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                          <h6 class="dropdown-header">
+                              Alerts Center
+                          </h6>
+                          <a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="mr-3">
+                                  <div class="icon-circle bg-primary">
+                                      <i class="fas fa-file-alt text-white"></i>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="small text-gray-500">December 12, 2019</div>
+                                  <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                              </div>
+                          </a>
+                          <a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="mr-3">
+                                  <div class="icon-circle bg-success">
+                                      <i class="fas fa-donate text-white"></i>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="small text-gray-500">December 7, 2019</div>
+                                  $290.29 has been deposited into your account!
+                              </div>
+                          </a>
+                          <a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="mr-3">
+                                  <div class="icon-circle bg-warning">
+                                      <i class="fas fa-exclamation-triangle text-white"></i>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="small text-gray-500">December 2, 2019</div>
+                                  Spending Alert: We've noticed unusually high spending for your account.
+                              </div>
+                          </a>
+                          <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                      </div>
+                  </li>
+  
+  
+  
+                  <div class="topbar-divider d-none d-sm-block"></div>
+  
+                  <!-- Nav Item - User Information -->
+                  <li class="nav-item dropdown no-arrow">
+                      <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                          <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
+                      </a>
+                      <!-- Dropdown - User Information -->
+                      <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                          <a class="dropdown-item" href="#">
+                              <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                              Profile
+                          </a>
+                          <a class="dropdown-item" href="#">
+                              <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                              Settings
+                          </a>
+                          <a class="dropdown-item" href="#">
+                              <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                              Activity Log
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                              <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                              Logout
+                          </a>
+                      </div>
+                  </li>
+  
+              </ul>
+  
+          </nav>
+          <!-- End of Topbar -->
+  
+          <!-- Begin Page Content -->
+          <div class="container py-2">
+            <h1 class="mb-3">Image Gallery</h1>
+            
+
+            <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#addImageModal">Add New Image</button>
+
+            <div class="grid-container">
+                <div class="image-box">
+                  <img src="../img/person_4.jpg" alt="Dummy Image 1">
+                </div>
+                <div class="image-box">
+                  <img src="../img/person_3.jpg" alt="Dummy Image 2">
+                </div>
+                <div class="image-box">
+                  <img src="../img/staff-1.jpg" alt="Dummy Image 3">
+                </div>
+                <div class="image-box">
+                  <img src="../img/staff-2.jpg" alt="Dummy Image 3">
+                </div>
+                <div class="image-box">
+                  <img src="../img/staff-3.jpg" alt="Dummy Image 3">
+                </div>
+                <div class="image-box">
+                  <img src="../img/staff-4.jpg" alt="Dummy Image 3">
+                </div>
+                <!-- Add more image-box elements as needed -->
               </div>
-            </li>
-
-
-
-
-            <!-- Nav Item - Alerts -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3+</span>
-              </a>
-              <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">Alerts Center</h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for
-                    your account.
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
-            </li>
-
-            <!-- Nav Item - Messages -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-envelope fa-fw"></i>
-                <!-- Counter - Messages -->
-                <span class="badge badge-danger badge-counter">7</span>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="messagesDropdown">
-                <h6 class="dropdown-header">Message Center</h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="..." />
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div class="font-weight-bold">
-                    <div class="text-truncate">
-                      Hi there! I am wondering if you can help me with a
-                      problem I've been having.
-                    </div>
-                    <div class="small text-gray-500">Emily Fowler · 58m</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="..." />
-                    <div class="status-indicator"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">
-                      I have the photos that you ordered last month, how would
-                      you like them sent to you?
-                    </div>
-                    <div class="small text-gray-500">Jae Chun · 1d</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="..." />
-                    <div class="status-indicator bg-warning"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">
-                      Last month's report looks great, I am very happy with
-                      the progress so far, keep up the good work!
-                    </div>
-                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="..." />
-                    <div class="status-indicator bg-success"></div>
-                  </div>
-                  <div>
-                    <div class="text-truncate">
-                      Am I a good boy? The reason I ask is because someone
-                      told me that people say this to all dogs, even if they
-                      aren't good...
-                    </div>
-                    <div class="small text-gray-500">
-                      Chicken the Dog · 2w
-                    </div>
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-              </div>
-            </li>
-
-            <div class="topbar-divider d-none d-sm-block"></div>
-
-            <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg" />
-              </a>
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <!-- End of Topbar -->
-
-        <!-- Begin Page Content -->
-        <div class="container py-2">
-          <h1 class="text-center mb-3">This Page is not Available yet</h1>
-        
         </div>
-        <!-- /.container-fluid -->
+        <!-- End of Main Content -->
+  
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white"></footer>
+        <!-- End of Footer -->
       </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white"></footer>
-      <!-- End of Footer -->
+      <!-- End of Content Wrapper -->
     </div>
-    <!-- End of Content Wrapper -->
-  </div>
-  <!-- End of Page Wrapper -->
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Select "Logout" below if you are ready to end your current session.
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">
-            Cancel
-          </button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+    <!-- End of Page Wrapper -->
+  
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+    <div class="modal fade" id="addImageModal" tabindex="-1" role="dialog" aria-labelledby="addImageModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="addImageModalLabel">Add New Image</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="imageTitle">Image Title</label>
+                  <input type="text" class="form-control" id="imageTitle" placeholder="Enter image title">
+                </div>
+                <div class="form-group">
+                  <label for="imageFile">Select Image File</label>
+                  <input type="file" class="form-control-file" id="imageFile">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="addImage()">Add Image</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-
-  <!-- Confirmation modal -->
-  <div class="modal fade" id="suspendModal" tabindex="-1" role="dialog" aria-labelledby="suspendModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="suspendModalLabel">Suspend User Confirmation</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Are you sure you want to suspend this user?</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-danger">Suspend User</button>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="login.html">Logout</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  
+  
+    <!-- Confirmation modal -->
+    <div class="modal fade" id="suspendModal" tabindex="-1" role="dialog" aria-labelledby="suspendModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="suspendModalLabel">Suspend User Confirmation</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to suspend this user?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger">Suspend User</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+  // Video data
+  const videos = [
+    {
+      id: 1,
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    },
+    {
+      id: 2,
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    },
+    {
+      id: 3,
+      url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    },
+  ];
 
+  // Function to render the video player
+  function renderVideoPlayer(video) {
+    const col = document.createElement("div");
+    col.classList.add("col-lg-4", "mb-4");
 
+    const card = document.createElement("div");
+    card.classList.add("card");
 
+    const videoContainer = document.createElement("div");
+    videoContainer.classList.add("video-container");
 
+    const videoIframe = document.createElement("iframe");
+    videoIframe.setAttribute("src", video.url);
+    videoIframe.setAttribute("allowfullscreen", "");
+    videoIframe.setAttribute("frameborder", "0");
+
+    videoContainer.appendChild(videoIframe);
+
+    card.appendChild(videoContainer);
+
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
+
+    const editButton = document.createElement("button");
+    editButton.classList.add("btn", "btn-info", "btn-block");
+    editButton.innerText = "Edit";
+    editButton.addEventListener("click", function() {
+      const newUrl = prompt("Enter the new video URL:");
+      if (newUrl) {
+        videoIframe.setAttribute("src", newUrl);
+      }
+    });
+
+    cardBody.appendChild(editButton);
+
+    card.appendChild(cardBody);
+
+    col.appendChild(card);
+
+    return col;
+  }
+
+  // Function to render all videos
+  function renderVideos() {
+    const videoList = document.getElementById("videoList");
+    videoList.innerHTML = "";
+
+    videos.forEach(function(video) {
+      const videoPlayer = renderVideoPlayer(video);
+      videoList.appendChild(videoPlayer);
+    });
+  }
+
+  // Event listener for "Add New Video" button
+  const addVideoBtn = document.getElementById("addVideoBtn");
+  addVideoBtn.addEventListener("click", function() {
+    const videoUrl = prompt("Enter the video URL:");
+    if (videoUrl) {
+      const newVideo = {
+        id: videos.length + 1,
+        url: videoUrl,
+      };
+      videos.push(newVideo);
+      renderVideos();
+    }
+  });
+
+  // Initial rendering of videos
+  renderVideos();
+});
+
+      </script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+  
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+  
+    <!-- Page level custom scripts -->
+  
+  <!-- Code injected by live-server -->
   <script>
-   // Update video button click event
-   $("#update-video-btn").click(function() {
-        // Show file upload dialog and get the selected file
-        var input = document.createElement("input");
-        input.type = "file";
-        input.accept = "video/*";
-        input.onchange = function() {
-          var file = input.files[0];
-          if (file) {
-            // Update the video source and last updated date
-            var videoSrc = URL.createObjectURL(file);
-            var lastUpdated = new Date();
-            $("#video-player source").attr("src", videoSrc);
-            $("#video-player")[0].load();
-            $("#last-updated").text("Last updated: " + lastUpdated.toLocaleString());
-          }
-        };
-        input.click();
-      });
+      // <![CDATA[  <-- For SVG support
+      if ('WebSocket' in window) {
+          (function () {
+              function refreshCSS() {
+                  var sheets = [].slice.call(document.getElementsByTagName("link"));
+                  var head = document.getElementsByTagName("head")[0];
+                  for (var i = 0; i < sheets.length; ++i) {
+                      var elem = sheets[i];
+                      var parent = elem.parentElement || head;
+                      parent.removeChild(elem);
+                      var rel = elem.rel;
+                      if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                      }
+                      parent.appendChild(elem);
+                  }
+              }
+              var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+              var address = protocol + window.location.host + window.location.pathname + '/ws';
+              var socket = new WebSocket(address);
+              socket.onmessage = function (msg) {
+                  if (msg.data == 'reload') window.location.reload();
+                  else if (msg.data == 'refreshcss') refreshCSS();
+              };
+              if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                  console.log('Live reload enabled.');
+                  sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+              }
+          })();
+      }
+      else {
+          console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+      }
+      // ]]>
   </script>
-  <!-- Bootstrap core JavaScript-->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="../js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-  <!-- Page level custom scripts -->
-
-</body>
-
-</html>
+  
+  
+  </body></html>
