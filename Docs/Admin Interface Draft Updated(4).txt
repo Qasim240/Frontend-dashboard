@@ -129,7 +129,7 @@ The top of the table should have a button to "Add New Partner"
 The add new subscriber page should open the Create New HR Admin Partner page.
 
 >>Manage Intro Videos
-This is a web page with embedded videos; please embed like 3 different videos with a video player. Each embedded video should have a an option to edit and upload a replacement video.
+This is a web page with embedded videos; please embed like 3 different videos with a video player. Each embedded video should have an option to edit and upload a replacement video.
 
 There should be a button at the top to add new video.
 
@@ -150,7 +150,7 @@ The top of the table should have a button to "Add New Event".
 The add new event page should be a web form with the following fields: Select Event Type, Enter Event Title, Select Date (Calendar Selection), Select Department, Submit Button.
 
 >>Manage Documentary
-This is a web page with embedded videos; please embed like 3 different videos with a video player. Each embedded video should have a an option to edit and upload a replacement video.
+This is a web page with embedded videos; please embed like 3 different videos with a video player. Each embedded video should have aan option to edit and upload a replacement video.
 
 There should be a button at the top to add new documentary.
 
