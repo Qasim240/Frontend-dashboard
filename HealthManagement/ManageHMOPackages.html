@@ -8,7 +8,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Create New Verification Subscriber</title>
+  <title>Manage HMOs</title>
 
   <!-- Custom fonts for this template -->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -527,11 +527,11 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link " href="#" data-toggle="collapse" data-target="#Verification"
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Verification"
             aria-expanded="true" aria-controls="Verification">
             <span>Verification</span>
         </a>
-        <div id="Verification" class="collapse show" aria-labelledby="headingVerification"
+        <div id="Verification" class="collapse" aria-labelledby="headingVerification"
             data-parent="#accordionSidebar">
             <div class="py-2 collapse-inner rounded">
                 <a class="nav-link w-12rem sub-nav-link " href="#" data-toggle="collapse"
@@ -539,14 +539,14 @@
                     aria-controls="VerificationSubscriberManager">
                     <span>Verification Subscriber Manager</span>
                 </a>
-                <div id="VerificationSubscriberManager" class="collapse show"
+                <div id="VerificationSubscriberManager" class="collapse"
                     aria-labelledby="headingVerificationSubscriberManager" data-parent="#Verification">
                     <div class="collapse-inner">
                         <div class="">
                             <a class="collapse-item " href="../Verification/CreateNewVerificationSubscriber.html">Create New Verification Subscriber</a>
-                                    <a class="collapse-item" href="../Verification/ViewVerificationSubscribers.html">View Verification Subscribers</a>
-                                    <a class="collapse-item active" href="../Verification/CreateVerificationPartner.html">Create Verification Partner</a>
-                                    <a class="collapse-item" href="../Verification/ViewVerificationPartners.html">View Verification Partners</a>
+                                    <a class="collapse-item " href="../Verification/ViewVerificationSubscribers.html">View Verification Subscribers</a>
+                                    <a class="collapse-item" href="../Verification/CreateVerificationPartner.html">Create Verification Partner</a>
+                                    <a class="collapse-item active" href="../Verification/ViewVerificationPartners.html">View Verification Partners</a>
                         </div>
                     </div>
                 </div>
@@ -558,21 +558,19 @@
 
     <!-- Health Management -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#HealthManagement"
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#HealthManagement"
             aria-expanded="true" aria-controls="Dashboard">
             <span>Health Management</span>
         </a>
-        <div id="HealthManagement" class="collapse" aria-labelledby="headingTwo"
+        <div id="HealthManagement" class="collapse show" aria-labelledby="headingTwo"
             data-parent="#accordionSidebar">
             <div class="py-2 collapse-inner rounded">
                 <div class="">
-
-
-                    <a class="collapse-item" href="Error.html">Manage Hospitals(Ratings)</a>
-                    <a class="collapse-item" href="Error.html">Manage HMOs</a>
-                    <a class="collapse-item" href="Error.html">Manage HMO Packages</a>
-                    <a class="collapse-item" href="Error.html">Manage Enrolments</a>
-                    <a class="collapse-item" href="Error.html">Manage Hospital Checkins</a>
+                    <a class="collapse-item" href="../HealthManagement/ManageHospitals.html">Manage Hospitals(Ratings)</a>
+                    <a class="collapse-item "  href="../HealthManagement/ManageHMOs.html">Manage HMOs</a>
+                    <a class="collapse-item active" href="../HealthManagement/ManageHMOPackages.html">Manage HMO Packages</a>
+                    <a class="collapse-item" href="../HealthManagement/ManageEnrolments.html">Manage Enrolments</a>
+                    <a class="collapse-item" href="../HealthManagement/ManageHospitalCheckins.html">Manage Hospital Checkins</a>
                 </div>
             </div>
         </div>
@@ -1183,59 +1181,105 @@ Admin Management
 
         <!-- Begin Page Content -->
         <div class="container py-2">
-            
+            <div class="row mb-5">
+                <div class="col-lg-5">
+
+                    <div class="row">
+                        <!-- <div class="col-lg-6">
+                            <button class="btn btn-primary mb-2 w-100 mr-3" data-toggle="modal" data-target="#newUserModal">
+                                Add New HMO
+                            </button>
+                        </div> -->
+                        <div class="col-lg-6">
+                            <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
+                                Export Raw Data
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="text-center my-lg-0 my-3">
+                        <p class="mb-0">Total Categories: 48369</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group mb-0 d-flex">
+                                <select class="form-control mb-3" id="dateFilter">
+                                    <option disabled="" selected="" value="all">Filter by</option>
+                                    <option value="last24">Last 24 Hours</option>
+                                    <option value="last7">Last 7 Days</option>
+                                    <option value="last30">Last 30 Days</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <input cl="" type="date" id="Custom" name="Custom" class=" mb-3 form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+            </div>
             <div class="card">
                 <div class="card-body">
-                          <div class="col-md-10 mx-auto">
-
-
-                            <form class="border p-4 rounded-lg bg-light">
-                                <div class="form-group">
-                                  <label for="companyName">Enter Company Name</label>
-                                  <input type="text" class="form-control" id="companyName" placeholder="Enter Company Name">
-                                </div>
-                                <div class="form-group">
-                                  <label for="selectLocation">Select Location</label>
-                                  <select class="form-control" id="selectLocation">
-                                    <option>Location A</option>
-                                    <option>Location B</option>
-                                    <option>Location C</option>
-                                  </select>
-                                </div>
-                                <div class="form-group">
-                                  <label for="firstName">First Name</label>
-                                  <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
-                                </div>
-                                <div class="form-group">
-                                  <label for="lastName">Last Name</label>
-                                  <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
-                                </div>
-                                <div class="form-group">
-                                  <label for="email">Email</label>
-                                  <input type="email" class="form-control" id="email" placeholder="Enter Email">
-                                </div>
-                                <div class="form-group">
-                                  <label for="phone">Phone</label>
-                                  <input type="tel" class="form-control" id="phone" placeholder="Enter Phone">
-                                </div>
-                                <div class="text-right">
-                                  <button type="submit" class="btn btn-primary">Submit</button>
-                                </div>
-                              </form>
-                              
-                              
-                              
-
-
-
-
-                          </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                              <tr>
+                                <th class="d-flex flex-column">
+                                  <label for="selectAll">Select All</label>
+                                  <input type="checkbox" id="selectAll">
+                                </th>
+                                <th>SN</th>
+                                <th>HMO Company</th>
+                                <th>Location</th>
+                                <th>Total Hospitals</th>
+                                <th>Total Packages</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="checkbox"></td>
+                                <td>1</td>
+                                <td>Example HMO</td>
+                                <td>Country A</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>
+                                    <button class="btn btn-success mb-2 w-100 mr-3" data-toggle="modal" data-target="#newUserModal">
+                                        View Packages
+                                    </button>
+                                </td>
+                              </tr>
+                              <!-- Repeat the above row for additional data -->
+                            </tbody>
+                          </table>
+                          
+                      </div>
+                      
                       
 
                 </div>
             </div>
         
         </div>
+        <!-- /.container-fluid -->
+      </div>
         <!-- /.container-fluid -->
       </div>
       <!-- End of Main Content -->
@@ -1300,6 +1344,46 @@ Admin Management
     </div>
   </div>
 
+<!-- create new user modal -->
+<div class="modal fade" id="newUserModal" tabindex="-1" role="dialog" aria-labelledby="newUserModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="newUserModalLabel">Packages</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+         <div class="table-responsive">
+            <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                   
+                    <th>SN</th>
+                    <th>Package Name</th>
+                    <th>Total Enrolls</th>
+                    <th>Total Check-ins</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Example Package</td>
+                    <td>100</td>
+                    <td>50</td>
+                  </tr>
+                  <!-- Repeat the above row for additional data -->
+                </tbody>
+              </table>
+         </div>
+              
+              
+        </div>
+    </div>
+</div>
+</div>
 
 
 
