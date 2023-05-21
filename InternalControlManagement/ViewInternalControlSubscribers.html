@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>View KPI Scorecard</title>
+  <title>View Internal Control Subscribers</title>
 
   <!-- Custom fonts for this template -->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -656,24 +656,24 @@
     <li class="nav-item">
         <ul class="list-unstyled">
             <li class="nav-item">
-                <a class="nav-link " href="#" data-toggle="collapse" data-target="#Performance"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Performance"
                     aria-expanded="true" aria-controls="Performance">
                     <span>Performance Management</span>
                 </a>
-                <div id="Performance" class="collapse show" aria-labelledby="headingTwo"
+                <div id="Performance" class="collapse" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
                         <div class="">
-                            <a class="nav-link  w-12rem sub-nav-link " href="#" data-toggle="collapse"
+                            <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse"
                                 data-target="#PerformanceSubscriber" aria-expanded="true"
                                 aria-controls="PerformanceSubscriber">
                                 <span>Create New Performance Subscriber</span>
                             </a>
-                            <div id="PerformanceSubscriber" class="collapse show" aria-labelledby="headingTwo"
+                            <div id="PerformanceSubscriber" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#PerformanceSubscriber">
                                 <div class="">
                                     <div class="collapse-inner">
-                                        <a class="collapse-item " href="../PerformanceManagement/CreateNewPerformanceSubscriber.html">Create New Performance Subscriber</a>
+                                        <a class="collapse-item active" href="../PerformanceManagement/CreateNewPerformanceSubscriber.html">Create New Performance Subscriber</a>
                                         <a class="collapse-item " href="../PerformanceManagement/ViewPerformanceSubscribers.html">View Performance Subscribers</a>
                                      
                                     </div>
@@ -681,7 +681,7 @@
                             </div>
                             <div class="">
                                 <a class="collapse-item " href="../PerformanceManagement/ViewAppraisalWindow.html">View Appraisal Window</a>
-                                <a class="collapse-item active" href="../PerformanceManagement/ViewKPIScorecard.html">View KPI Scorecard</a>
+                                <a class="collapse-item " href="../PerformanceManagement/ViewKPIScorecard.html">View KPI Scorecard</a>
                                 
                             </div>
                         </div>
@@ -693,17 +693,39 @@
 
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#InternalControlManagement"
-            aria-expanded="true" aria-controls="InternalControlManagement">
-            <span>Internal Control Management</span>
-        </a>
-        <div id="InternalControlManagement" class="collapse" aria-labelledby="headingTwo"
-            data-parent="#accordionSidebar">
-            <div class="py-2 collapse-inner rounded">
-                <a class="collapse-item" href="../PokeManagement/ManagePoke.html">Manage Poke</a>
-                <a class="collapse-item" href="../PokeManagement/ViewPokeUsage.html">View Poke Usage</a>
-            </div>
-        </div>
+        <ul class="list-unstyled">
+            <li class="nav-item ">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#InternalControlManagement"
+                    aria-expanded="true" aria-controls="InternalControlManagement">
+                    <span>Internal Control Management</span>
+                </a>
+                <div id="InternalControlManagement" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <div class="">
+                            <a class="nav-link  w-12rem sub-nav-link" href="#" data-toggle="collapse" data-target="#InternalControl" aria-expanded="true"
+                                aria-controls="InternalControl">
+                                <span>Internal Control Subscriber Manager
+                            </a>
+                            <div id="InternalControl" class="collapse show" aria-labelledby="headingTwo" data-parent="#InternalControl">
+                                <div class="">
+                                    <div class="collapse-inner">
+                                        <a class="collapse-item " href="../InternalControlManagement/CreateNewPerformanceSubscriber.html">Create New Performance Subscriber</a>
+                                        <a class="collapse-item active" href="../InternalControlManagement/ViewInternalControlSubscribers.html">View Internal Control Subscribers</a>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a class="collapse-item" href="../InternalControlManagement/ViewProcesses.html">View Processes</a>
+                                <a class="collapse-item" href="../InternalControlManagement/ViewControlChart.html">View Control Chart</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </li>
 
     <li class="nav-item">
@@ -1202,19 +1224,24 @@ Admin Management
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+      
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-body">
+
+
+
                     <div class="row mb-5">
                         <div class="col-lg-5">
 
                             <div class="row">
-                                <!-- <div class="col-lg-6">
+                                <div class="col-lg-6">
                                     <a href="CreateNewPerformanceSubscriber.html" class="btn btn-primary mb-2 w-100 mr-3">
                                         Add New Subscriber
-                                </a>
-                                </div> -->
+                                    </a>
+                                </div>
                                 <div class="col-lg-6">
                                     <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
                                         Export Raw Data
@@ -1226,7 +1253,7 @@ Admin Management
 
                         <div class="col-lg-2">
                             <div class="text-center my-lg-0 my-3">
-                                <p class="mb-0">Total KPI: 350</p> 
+                                <p class="mb-0">Total Candidates: 350</p>
                             </div>
                         </div>
 
@@ -1251,11 +1278,6 @@ Admin Management
                                 </div>
                             </div>
 
-
-
-
-
-
                         </div>
 
 
@@ -1273,10 +1295,14 @@ Admin Management
                                 <th>SN</th>
                                 <th>Company Name</th>
                                 <th>Location</th>
-                                <th>Score Card Title</th>
-                                <th>Assigned Department</th>
-                                <th>Timestamp</th>
-                                <!-- <th>Action</th> -->
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Total Users</th>
+                                <th>Billing Cycle</th>
+                                <th>Expiration Date</th>
+                                <th>Action</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -1285,20 +1311,24 @@ Admin Management
                                 <td>1</td>
                                 <td>Example Company</td>
                                 <td>Location Name</td>
-                                <td>Score Card Title</td>
-                                <td>Assigned Department</td>
-                                <td>Timestamp</td>
-                                <!-- <td>
+                                <td>Abdullahi</td>
+                                <td>Abubakar</td>
+                                <td>abdullahi@example.com</td>
+                                <td>+234 809-123-4567</td>
+                                <td>Total Users</td>
+                                <td>Billing Cycle</td>
+                                <td>Expiration Date</td>
+                                <td>
                                   <div class="dropdown">
                                     <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Action
+                                      Actions
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="actionDropdown">
-                                      <a class="dropdown-item" href="#">Suspend</a>
                                       <a class="dropdown-item" href="#">Renew</a>
+                                      <a class="dropdown-item" href="#" data-toggle="modal" data-target="#suspendModal">Suspend User</a>
                                     </div>
                                   </div>
-                                </td> -->
+                                </td>
                               </tr>
                               <!-- Repeat the above row for additional data -->
                             </tbody>
@@ -1307,11 +1337,11 @@ Admin Management
                           
 
                     </div>
-
                 </div>
             </div>
         </div>
-        <!-- /.container-fluid -->
+    </div>
+    <!-- End of Main Content -->
       </div>
       <!-- End of Main Content -->
 

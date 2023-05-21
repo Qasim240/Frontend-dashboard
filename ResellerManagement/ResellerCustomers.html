@@ -2,31 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>View KPI Scorecard</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Reseller Customers</title>
 
-  <!-- Custom fonts for this template -->
-  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
 
-  <!-- Custom styles for this template -->
-  <link href="../css/sb-admin-2.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/sb-admin-2.css" rel="stylesheet">
 
 
-  <!-- Custom styles for this page -->
-  <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <!-- Custom styles for this page -->
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
-  <!-- Page Wrapper -->
-  <div id="wrapper">
-   <!-- Sidebar -->
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+       <!-- Sidebar -->
    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     <!-- Sidebar - Brand -->
     <div class="m-4">
@@ -656,24 +657,24 @@
     <li class="nav-item">
         <ul class="list-unstyled">
             <li class="nav-item">
-                <a class="nav-link " href="#" data-toggle="collapse" data-target="#Performance"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Performance"
                     aria-expanded="true" aria-controls="Performance">
                     <span>Performance Management</span>
                 </a>
-                <div id="Performance" class="collapse show" aria-labelledby="headingTwo"
+                <div id="Performance" class="collapse" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
                         <div class="">
-                            <a class="nav-link  w-12rem sub-nav-link " href="#" data-toggle="collapse"
+                            <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse"
                                 data-target="#PerformanceSubscriber" aria-expanded="true"
                                 aria-controls="PerformanceSubscriber">
                                 <span>Create New Performance Subscriber</span>
                             </a>
-                            <div id="PerformanceSubscriber" class="collapse show" aria-labelledby="headingTwo"
+                            <div id="PerformanceSubscriber" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#PerformanceSubscriber">
                                 <div class="">
                                     <div class="collapse-inner">
-                                        <a class="collapse-item " href="../PerformanceManagement/CreateNewPerformanceSubscriber.html">Create New Performance Subscriber</a>
+                                        <a class="collapse-item" href="../PerformanceManagement/CreateNewPerformanceSubscriber.html">Create New Performance Subscriber</a>
                                         <a class="collapse-item " href="../PerformanceManagement/ViewPerformanceSubscribers.html">View Performance Subscribers</a>
                                      
                                     </div>
@@ -681,7 +682,7 @@
                             </div>
                             <div class="">
                                 <a class="collapse-item " href="../PerformanceManagement/ViewAppraisalWindow.html">View Appraisal Window</a>
-                                <a class="collapse-item active" href="../PerformanceManagement/ViewKPIScorecard.html">View KPI Scorecard</a>
+                                <a class="collapse-item " href="../PerformanceManagement/ViewKPIScorecard.html">View KPI Scorecard</a>
                                 
                             </div>
                         </div>
@@ -693,20 +694,42 @@
 
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#InternalControlManagement"
-            aria-expanded="true" aria-controls="InternalControlManagement">
-            <span>Internal Control Management</span>
-        </a>
-        <div id="InternalControlManagement" class="collapse" aria-labelledby="headingTwo"
-            data-parent="#accordionSidebar">
-            <div class="py-2 collapse-inner rounded">
-                <a class="collapse-item" href="../PokeManagement/ManagePoke.html">Manage Poke</a>
-                <a class="collapse-item" href="../PokeManagement/ViewPokeUsage.html">View Poke Usage</a>
-            </div>
-        </div>
+        <ul class="list-unstyled">
+            <li class="nav-item ">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#InternalControlManagement"
+                    aria-expanded="true" aria-controls="InternalControlManagement">
+                    <span>Internal Control Management</span>
+                </a>
+                <div id="InternalControlManagement" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <div class="">
+                            <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse" data-target="#InternalControl" aria-expanded="true"
+                                aria-controls="InternalControl">
+                                <span>Internal Control Subscriber Manager
+                            </a>
+                            <div id="InternalControl" class="collapse" aria-labelledby="headingTwo" data-parent="#InternalControl">
+                                <div class="">
+                                    <div class="collapse-inner">
+                                        <a class="collapse-item " href="../InternalControlManagement/CreateNewPerformanceSubscriber.html">Create New Performance Subscriber</a>
+                                        <a class="collapse-item " href="../InternalControlManagement/ViewInternalControlSubscribers.html">View Internal Control Subscribers</a>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a class="collapse-item" href="../InternalControlManagement/ViewProcesses.html">View Processes</a>
+                                <a class="collapse-item " href="../InternalControlManagement/ViewControlChart.html">View Control Chart</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </li>
 
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#PokeManagement"
             aria-expanded="true" aria-controls="PokeManagement">
             <span>Poke Management</span>
@@ -717,7 +740,7 @@
                 <a class="collapse-item" href="../PokeManagement/ViewPokeUsage.html">View Poke Usage</a>
             </div>
         </div>
-    </li>
+    </li> -->
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#partnersManagement"
@@ -728,26 +751,26 @@
             data-parent="#accordionSidebar">
             <div class="py-2 collapse-inner rounded">
 
-                <a class="collapse-item" href="Error.html">
-                    Manage Partners (KYC Docs, )
+                <a class="collapse-item" href="../PartnersManagement/ManagePartners.html">
+                    Manage Partners
                 </a>
-                <a class="collapse-item" href="Error.html">
-                    Manage Portfolio (Proposal Letter, Pricing)
+                <a class="collapse-item" href="../PartnersManagement/ManagePortfolio.html">
+                    Manage Portfolio
                 </a>
 
-                <a class="collapse-item" href="Error.html">
+                <a class="collapse-item" href="../PartnersManagement/PartnerRatings.html">
                     Partner Ratings
                 </a>
-                <a class="collapse-item" href="Error.html">
+                <a class="collapse-item" href="../PartnersManagement/ManageBids.html">
                     Manage Bids
                 </a>
-                <a class="collapse-item" href="Error.html">
+                <a class="collapse-item" href="../PartnersManagement/ManageHires.html">
                     Manage Hires
                 </a>
-                <a class="collapse-item" href="Error.html">
+                <a class="collapse-item" href="../PartnersManagement/PartnerWallet.html">
                     Partner Wallet
                 </a>
-                <a class="collapse-item" href="Error.html">
+                <a class="collapse-item" href="../PartnersManagement/PartnerInstructions.html">
                     Partner Instructions
                 </a>
             </div>
@@ -756,23 +779,23 @@
 
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#ResellerManagement"
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#ResellerManagement"
             aria-expanded="true" aria-controls="ResellerManagement">
             <span>Reseller Management</span>
         </a>
-        <div id="ResellerManagement" class="collapse" aria-labelledby="headingResellerManagement"
+        <div id="ResellerManagement" class="collapse show" aria-labelledby="headingResellerManagement"
             data-parent="#accordionSidebar">
             <div class="py-2 collapse-inner rounded">
-                <a class="collapse-item" href="#">
+                <a class="collapse-item " href="../ResellerManagement/ManageResellers.html">
                     Manage Resellers
                 </a>
-                <a class="collapse-item" href="Error.html">
+                <a class="collapse-item active" href="../ResellerManagement/ResellerCustomers.html">
                     Reseller Customers
                 </a>
-                <a class="collapse-item" href="Error.html">
+                <a class="collapse-item" href="../ResellerManagement/ResellerSales.html">
                     Reseller Sales
                 </a>
-                <a class="collapse-item" href="Error.html">
+                <a class="collapse-item" href="../ResellerManagement/ResellerWallet.html">
                     Reseller Wallet
                 </a>
             </div>
@@ -837,16 +860,16 @@
                     <div id="GlobalAuditTrail" class="collapse" aria-labelledby="headingTwo"
                         data-parent="#AuditTrailData">
                         <div class="py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="./AuditTrailData/AdminAuthenticationLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/AdminAuthenticationLog.html">
                                 Admin Authentication Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/AdminSessionLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/AdminSessionLog.html">
                                 Admin Session Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/AdminActivityLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/AdminActivityLog.html">
                                 Admin Activity Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/AdminPasswordResetLog.html  ">
+                            <a class="collapse-item" href="../AuditTrailData/AdminPasswordResetLog.html  ">
                                 Admin PasswordReset Log
                             </a>
                         </div>
@@ -859,16 +882,16 @@
                     <div id="CompanyAuditTrail" class="collapse" aria-labelledby="headingTwo"
                         data-parent="#AuditTrailData">
                         <div class="py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="./AuditTrailData/CompanyAuthenticationLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/CompanyAuthenticationLog.html">
                                 Company Authentication Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/CompanySessionLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/CompanySessionLog.html">
                                 Company Session Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/CompanyActivityLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/CompanyActivityLog.html">
                                 Company Activity Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/CompanyPasswordResetLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/CompanyPasswordResetLog.html">
                                 Company Password Reset Log
                             </a>
                         </div>
@@ -883,16 +906,16 @@
                     <div id="PartnerAuditTrail" class="collapse" aria-labelledby="headingTwo"
                         data-parent="#AuditTrailData">
                         <div class="py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="./AuditTrailData/PartnerAuthenticationLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/PartnerAuthenticationLog.html">
                                 Partner Authentication Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/PartnerSessionLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/PartnerSessionLog.html">
                                 Partner Session Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/PartnerActivityLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/PartnerActivityLog.html">
                                 Partner Activity Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/PartnerPasswordResetLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/PartnerPasswordResetLog.html">
                                 Partner Password Reset Log
                             </a>
                         </div>
@@ -905,16 +928,16 @@
                     <div id="ResellerAuditTrail" class="collapse" aria-labelledby="headingTwo"
                         data-parent="#AuditTrailData">
                         <div class="py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="./AuditTrailData/ResellerAuthenticationLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/ResellerAuthenticationLog.html">
                                 Reseller Authentication Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/ResellerSessionLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/ResellerSessionLog.html">
                                 Reseller Session Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/ResellerActivityLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/ResellerActivityLog.html">
                                 Reseller Activity Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/ResellerPasswordResetLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/ResellerPasswordResetLog.html">
                                 Reseller Password Reset Log
                             </a>
                         </div>
@@ -929,16 +952,16 @@
                     <div id="CandidateAuditTrail" class="collapse" aria-labelledby="headingTwo"
                         data-parent="#AuditTrailData">
                         <div class="py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="./AuditTrailData/CandidateAuthenticationLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/CandidateAuthenticationLog.html">
                                 Candidate Authentication Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/CandidateSessionLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/CandidateSessionLog.html">
                                 Candidate Session Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/CandidateActivityLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/CandidateActivityLog.html">
                                 Candidate Activity Log
                             </a>
-                            <a class="collapse-item" href="./AuditTrailData/CandidatePasswordResetLog.html">
+                            <a class="collapse-item" href="../AuditTrailData/CandidatePasswordResetLog.html">
                                 Candidate Password Reset Log
                             </a>
                         </div>
@@ -1059,363 +1082,527 @@ Admin Management
 </ul>
 <!-- End of Sidebar -->
 
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-      <!-- Main Content -->
-      <div id="content">
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0 mb-0" id="sidebarToggle"><i class="fa fa-bars"></i></button>
-            </div>
-            <!-- Sidebar Toggle (Topbar) -->
-            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                <i class="fa fa-bars"></i>
-            </button>
-
-            <!-- Topbar Search -->
-            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">
-                            <i class="fas fa-search fa-sm"></i>
-                        </button>
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <div class="text-center d-none d-md-inline">
+                        <button class="rounded-circle border-0 mb-0" id="sidebarToggle"><i
+                                class="fa fa-bars"></i></button>
                     </div>
-                </div>
-            </form>
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
 
-            <!-- Topbar Navbar -->
-            <ul class="navbar-nav ml-auto">
-
-                <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                <li class="nav-item dropdown no-arrow d-sm-none">
-                    <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-search fa-fw"></i>
-                    </a>
-                    <!-- Dropdown - Messages -->
-                    <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                        <form class="form-inline mr-auto w-100 navbar-search">
-                            <div class="input-group">
-                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fas fa-search fa-sm"></i>
-                                    </button>
-                                </div>
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
                             </div>
-                        </form>
-                    </div>
-                </li>
-                <li class="nav-item dropdown no-arrow mx-1 d-md-block d-none">
-                    <a class="nav-link" href="">
-                        Last login: May 6, 2023 at 10:30pm
+                        </div>
+                    </form>
 
-                    </a>
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
 
-                </li>
-
-                <!-- Nav Item - Alerts -->
-                <li class="nav-item dropdown no-arrow mx-1">
-                    <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-bell fa-fw"></i>
-                        <!-- Counter - Alerts -->
-                        <span class="badge badge-danger badge-counter">3+</span>
-                    </a>
-                    <!-- Dropdown - Alerts -->
-                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                        <h6 class="dropdown-header">
-                            Alerts Center
-                        </h6>
-                        <a class="dropdown-item d-flex align-items-center" href="#">
-                            <div class="mr-3">
-                                <div class="icon-circle bg-primary">
-                                    <i class="fas fa-file-alt text-white"></i>
-                                </div>
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div>
-                                <div class="small text-gray-500">December 12, 2019</div>
-                                <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                            </div>
-                        </a>
-                        <a class="dropdown-item d-flex align-items-center" href="#">
-                            <div class="mr-3">
-                                <div class="icon-circle bg-success">
-                                    <i class="fas fa-donate text-white"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="small text-gray-500">December 7, 2019</div>
-                                $290.29 has been deposited into your account!
-                            </div>
-                        </a>
-                        <a class="dropdown-item d-flex align-items-center" href="#">
-                            <div class="mr-3">
-                                <div class="icon-circle bg-warning">
-                                    <i class="fas fa-exclamation-triangle text-white"></i>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="small text-gray-500">December 2, 2019</div>
-                                Spending Alert: We've noticed unusually high spending for your account.
-                            </div>
-                        </a>
-                        <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                    </div>
-                </li>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1 d-md-block d-none">
+                            <a class="nav-link" href="">
+                                Last login: May 6, 2023 at 10:30pm
 
+                            </a>
 
+                        </li>
 
-                <div class="topbar-divider d-none d-sm-block"></div>
-
-                <!-- Nav Item - User Information -->
-                <li class="nav-item dropdown no-arrow">
-                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                        <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
-                    </a>
-                    <!-- Dropdown - User Information -->
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="#">
-                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                            Profile
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                            Settings
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                            Activity Log
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                            Logout
-                        </a>
-                    </div>
-                </li>
-
-            </ul>
-
-        </nav>
-        <!-- End of Topbar -->
-
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-            <!-- DataTales Example -->
-            <div class="card shadow mb-4">
-                <div class="card-body">
-                    <div class="row mb-5">
-                        <div class="col-lg-5">
-
-                            <div class="row">
-                                <!-- <div class="col-lg-6">
-                                    <a href="CreateNewPerformanceSubscriber.html" class="btn btn-primary mb-2 w-100 mr-3">
-                                        Add New Subscriber
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
                                 </a>
-                                </div> -->
-                                <div class="col-lg-6">
-                                    <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
-                                        Export Raw Data
-                                    </button>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+
+
+
+                            <div class="row mb-5">
+                                <div class="col-lg-5">
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <button class="btn btn-primary mb-2 w-100 mr-3" data-toggle="modal" data-target="#newUserModal">
+                                                Add New Customer
+                                            </button>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
+                                                Export Raw Data
+                                            </button>
+                                        </div>
+                                    </div>
+
                                 </div>
-                            </div>
 
-                        </div>
-
-                        <div class="col-lg-2">
-                            <div class="text-center my-lg-0 my-3">
-                                <p class="mb-0">Total KPI: 350</p> 
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-5">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group mb-0 d-flex">
-                                        <select class="form-control mb-3" id="dateFilter">
-                                            <option disabled selected value="all">Filter by</option>
-                                            <option value="last24">Last 24 Hours</option>
-                                            <option value="last7">Last 7 Days</option>
-                                            <option value="last30">Last 30 Days</option>
-                                        </select>
+                                <div class="col-lg-2">
+                                    <div class="text-center my-lg-0 my-3">
+                                        <p class="mb-0">Total Candidates: 350</p>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="">
-                                        <input cl type="date" id="Custom" name="Custom"
-                                            class=" mb-3 form-control">
+
+
+                                <div class="col-lg-5">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group mb-0 d-flex">
+                                                <select class="form-control mb-3" id="dateFilter">
+                                                    <option disabled selected value="all">Filter by</option>
+                                                    <option value="last24">Last 24 Hours</option>
+                                                    <option value="last7">Last 7 Days</option>
+                                                    <option value="last30">Last 30 Days</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="">
+                                                <input cl type="date" id="Custom" name="Custom"
+                                                    class=" mb-3 form-control">
+                                            </div>
+                                        </div>
                                     </div>
+
+
+
+
+
+
                                 </div>
+
+
+                            </div>
+                            <div class="table-responsive">
+
+
+
+                                <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                      <tr>
+                                        <th class="d-flex flex-column">
+                                          <label for="selectAll">Select All</label>
+                                          <input type="checkbox" id="selectAll">
+                                        </th>
+                                        <th>SN</th>
+                                        <th>Reseller Company</th>
+                                        <th>Location</th>
+                                        <th>Customer Company</th>
+                                        <th>Customer Email</th>
+                                        <th>Customer Phone</th>
+                                        <th>Subscribed Module</th>
+                                        <th>Billing Cycle</th>
+                                        <th>Payment Status</th>
+                                        <th>Timestamp</th>
+                                        <th>Action</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>1</td>
+                                        <td>Example Company</td>
+                                        <td>Location Name</td>
+                                        <td>Customer Company</td>
+                                        <td>Customer Email</td>
+                                        <td>Customer Phone</td>
+                                        <td>Subscribed Module</td>
+                                        <td>Billing Cycle</td>
+                                        <td><span class="badge badge-success">Paying</span></td>
+                                        <td>Timestamp</td>
+                                        <td>
+                                          <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Actions
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="actionDropdown">
+                                              <a class="dropdown-item" href="#">Suspend</a>
+                                            </div>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <!-- Repeat the above row for additional data -->
+                                    </tbody>
+                                  </table>
+                                  
+                                  
+                                  
+                                  
+                                  
+        
                             </div>
 
 
 
 
 
-
                         </div>
-
-
                     </div>
+                </div>
+            </div>
+            <!-- End of Main Content -->
 
-                    <div class="table-responsive">
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white"></footer>
+            <!-- End of Footer -->
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
 
-                        <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                              <tr>
-                                <th class="d-flex flex-column">
-                                  <label for="selectAll">Select All</label>
-                                  <input type="checkbox" id="selectAll">
-                                </th>
-                                <th>SN</th>
-                                <th>Company Name</th>
-                                <th>Location</th>
-                                <th>Score Card Title</th>
-                                <th>Assigned Department</th>
-                                <th>Timestamp</th>
-                                <!-- <th>Action</th> -->
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td><input type="checkbox"></td>
-                                <td>1</td>
-                                <td>Example Company</td>
-                                <td>Location Name</td>
-                                <td>Score Card Title</td>
-                                <td>Assigned Department</td>
-                                <td>Timestamp</td>
-                                <!-- <td>
-                                  <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Action
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="actionDropdown">
-                                      <a class="dropdown-item" href="#">Suspend</a>
-                                      <a class="dropdown-item" href="#">Renew</a>
-                                    </div>
-                                  </div>
-                                </td> -->
-                              </tr>
-                              <!-- Repeat the above row for additional data -->
-                            </tbody>
-                          </table>
-                          
-                          
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-                    </div>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Select "Logout" below if you are ready to end your current session.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">
+                        Cancel
+                    </button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- create new user modal -->
+    <div class="modal fade" id="newUserModal" tabindex="-1" role="dialog" aria-labelledby="newUserModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newUserModalLabel">Add New Resellers Customer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-group">
+                          <label for="resellerCompany">Select Reseller</label>
+                          <select class="form-control" id="resellerCompany">
+                            <option>Reseller 1</option>
+                            <option>Reseller 2</option>
+                            <option>Reseller 3</option>
+                            <!-- Add more options for resellers -->
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="customerCompany">Enter Customer Company Name</label>
+                          <input type="text" class="form-control" id="customerCompany" />
+                        </div>
+                        <div class="form-group">
+                          <label for="customerEmail">Customer Email</label>
+                          <input type="email" class="form-control" id="customerEmail" />
+                        </div>
+                        <div class="form-group">
+                          <label for="customerPhone">Customer Phone</label>
+                          <input type="tel" class="form-control" id="customerPhone" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      
+
+
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- create new user modal -->
+    <div class="modal fade" id="viewprofile" tabindex="-1" role="dialog" aria-labelledby="viewprofileLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewprofileLabel">User Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <th>SN</th>
+                            <td id="modal-sn">1</td>
+                        </tr>
+                        <tr>
+                            <th>First Name</th>
+                            <td id="modal-firstname">Abdullahi</td>
+                        </tr>
+                        <tr>
+                            <th>Last Name</th>
+                            <td id="modal-lastname">Abubakar</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td id="modal-email">abdullahi@example.com</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td id="modal-phone">+234 809-123-4567</td>
+                        </tr>
+                        <tr>
+                            <th>Country</th>
+                            <td id="modal-country">Nigeria</td>
+                        </tr>
+                        <tr>
+                            <th>Authentication</th>
+                            <td id="modal-authentication">Email</td>
+                        </tr>
+                        <tr>
+                            <th>2FA Status</th>
+                            <td id="modal-2fa-status">On</td>
+                        </tr>
+                        <tr>
+                            <th>Created On</th>
+                            <td id="modal-created-on">2022-01-01</td>
+                        </tr>
+                        <tr>
+                            <th>Last Login</th>
+                            <td id="modal-last-login">2022-01-15 10:00:00
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                    </button>
 
                 </div>
             </div>
         </div>
-        <!-- /.container-fluid -->
-      </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white"></footer>
-      <!-- End of Footer -->
     </div>
-    <!-- End of Content Wrapper -->
-  </div>
-  <!-- End of Page Wrapper -->
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
+    <!-- Confirmation modal -->
+    <div class="modal fade" id="suspendModal" tabindex="-1" role="dialog" aria-labelledby="suspendModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="suspendModalLabel">Suspend User Confirmation</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to suspend this user?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger">Suspend User</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          Select "Logout" below if you are ready to end your current session.
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">
-            Cancel
-          </button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
-        </div>
-      </div>
     </div>
-  </div>
-
-
-  <!-- Confirmation modal -->
-  <div class="modal fade" id="suspendModal" tabindex="-1" role="dialog" aria-labelledby="suspendModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="suspendModalLabel">Suspend User Confirmation</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Are you sure you want to suspend this user?</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-danger">Suspend User</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
 
-  <script>
-   // Update video button click event
-   $("#update-video-btn").click(function() {
-        // Show file upload dialog and get the selected file
-        var input = document.createElement("input");
-        input.type = "file";
-        input.accept = "video/*";
-        input.onchange = function() {
-          var file = input.files[0];
-          if (file) {
-            // Update the video source and last updated date
-            var videoSrc = URL.createObjectURL(file);
-            var lastUpdated = new Date();
-            $("#video-player source").attr("src", videoSrc);
-            $("#video-player")[0].load();
-            $("#last-updated").text("Last updated: " + lastUpdated.toLocaleString());
-          }
-        };
-        input.click();
-      });
-  </script>
-  <!-- Bootstrap core JavaScript-->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
 
-  <!-- Core plugin JavaScript-->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom scripts for all pages-->
-  <script src="../js/sb-admin-2.min.js"></script>
+        // select
+        document.getElementById('selectAll').addEventListener('change', function () {
+            let checkboxes = document.getElementsByTagName('input');
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].type == 'checkbox') {
+                    checkboxes[i].checked = this.checked;
+                }
+            }
+        });
 
-  <!-- Page level plugins -->
-  <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
-  <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+        function exportData() {
+            // Get the table element
+            var table = document.getElementById("dataTable");
 
-  <!-- Page level custom scripts -->
- <!-- Page level custom scripts -->
- <script src="../js/demo/datatables-demo.js"></script>
+            // Create a CSV string from the table data
+            var csv = [];
+            for (var i = 0; i < table.rows.length; i++) {
+                var row = table.rows[i];
+                var rowData = [];
+                for (var j = 0; j < row.cells.length; j++) {
+                    rowData.push(row.cells[j].innerText);
+                }
+                csv.push(rowData.join(","));
+            }
+            csv = csv.join("\n");
+
+            // Create a temporary download link and trigger a download
+            var link = document.createElement("a");
+            link.setAttribute(
+                "href",
+                "data:text/csv;charset=utf-8," + encodeURIComponent(csv)
+            );
+            link.setAttribute("download", "data.csv");
+            link.style.display = "none";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../js/demo/datatables-demo.js"></script>
 </body>
 
 </html>

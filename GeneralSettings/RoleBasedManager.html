@@ -1200,9 +1200,70 @@ Admin Management
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
+                    <div class="card shadow mb-2">
                       <div class="card-body">
-                        <div class="row mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-7">
+                              <div class="shadow-lg p-3">
+                                <h1>Role Management</h1>
+                                <div class="table-responsive">
+                                   <table class="table">
+                                       <thead>
+                                         <tr>
+                                           <th>SN</th>
+                                           <th>Role Name</th>
+                                           <th>Total Functionalities</th>
+                                           <th>Total Assignees</th>
+                                           <th>Action</th>
+                                         </tr>
+                                       </thead>
+                                       <tbody>
+                                         <tr>
+                                           <td>1</td>
+                                           <td>Role 1</td>
+                                           <td>10</td>
+                                           <td>5</td>
+                                           <td>
+                                             <button class="btn btn-primary">Edit</button>
+                                             <button class="btn btn-danger">Delete</button>
+                                           </td>
+                                         </tr>
+                                         <!-- Add more rows for additional roles -->
+                                       </tbody>
+                                     </table>
+                                </div>
+                              </div>
+                                  </div>
+                                  <div class="col-5">
+                                    <div class="p-3 shadow-sm">
+                                        <h1>Create New Role</h1>
+                                    <form>
+                                      <div class="form-group">
+                                        <label for="roleTitle">Enter Role Title</label>
+                                        <input type="text" class="form-control" id="roleTitle">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="features">Features</label><br>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" class="form-check-input" id="feature1">
+                                          <label class="form-check-label" for="feature1">Feature 1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" class="form-check-input" id="feature2">
+                                          <label class="form-check-label" for="feature2">Feature 2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                          <input type="checkbox" class="form-check-input" id="feature3">
+                                          <label class="form-check-label" for="feature3">Feature 3</label>
+                                        </div>
+                                        <!-- Add more checkboxes for additional features -->
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Save</button>
+                                    </form>
+                                    </div>
+                                  </div>
+                            </div>
+                        <!-- <div class="row mb-5">
                             <div class="col-lg-5">
             
                                 <div class="row">
@@ -1286,7 +1347,7 @@ Admin Management
                               
                               
                           
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                   </div>

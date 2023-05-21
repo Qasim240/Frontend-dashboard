@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>View KPI Scorecard</title>
+  <title>Create New Performance Subscriber</title>
 
   <!-- Custom fonts for this template -->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
@@ -656,24 +656,24 @@
     <li class="nav-item">
         <ul class="list-unstyled">
             <li class="nav-item">
-                <a class="nav-link " href="#" data-toggle="collapse" data-target="#Performance"
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Performance"
                     aria-expanded="true" aria-controls="Performance">
                     <span>Performance Management</span>
                 </a>
-                <div id="Performance" class="collapse show" aria-labelledby="headingTwo"
+                <div id="Performance" class="collapse" aria-labelledby="headingTwo"
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
                         <div class="">
-                            <a class="nav-link  w-12rem sub-nav-link " href="#" data-toggle="collapse"
+                            <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse"
                                 data-target="#PerformanceSubscriber" aria-expanded="true"
                                 aria-controls="PerformanceSubscriber">
                                 <span>Create New Performance Subscriber</span>
                             </a>
-                            <div id="PerformanceSubscriber" class="collapse show" aria-labelledby="headingTwo"
+                            <div id="PerformanceSubscriber" class="collapse" aria-labelledby="headingTwo"
                                 data-parent="#PerformanceSubscriber">
                                 <div class="">
                                     <div class="collapse-inner">
-                                        <a class="collapse-item " href="../PerformanceManagement/CreateNewPerformanceSubscriber.html">Create New Performance Subscriber</a>
+                                        <a class="collapse-item active" href="../PerformanceManagement/CreateNewPerformanceSubscriber.html">Create New Performance Subscriber</a>
                                         <a class="collapse-item " href="../PerformanceManagement/ViewPerformanceSubscribers.html">View Performance Subscribers</a>
                                      
                                     </div>
@@ -681,7 +681,7 @@
                             </div>
                             <div class="">
                                 <a class="collapse-item " href="../PerformanceManagement/ViewAppraisalWindow.html">View Appraisal Window</a>
-                                <a class="collapse-item active" href="../PerformanceManagement/ViewKPIScorecard.html">View KPI Scorecard</a>
+                                <a class="collapse-item " href="../PerformanceManagement/ViewKPIScorecard.html">View KPI Scorecard</a>
                                 
                             </div>
                         </div>
@@ -693,17 +693,39 @@
 
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#InternalControlManagement"
-            aria-expanded="true" aria-controls="InternalControlManagement">
-            <span>Internal Control Management</span>
-        </a>
-        <div id="InternalControlManagement" class="collapse" aria-labelledby="headingTwo"
-            data-parent="#accordionSidebar">
-            <div class="py-2 collapse-inner rounded">
-                <a class="collapse-item" href="../PokeManagement/ManagePoke.html">Manage Poke</a>
-                <a class="collapse-item" href="../PokeManagement/ViewPokeUsage.html">View Poke Usage</a>
-            </div>
-        </div>
+        <ul class="list-unstyled">
+            <li class="nav-item ">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#InternalControlManagement"
+                    aria-expanded="true" aria-controls="InternalControlManagement">
+                    <span>Internal Control Management</span>
+                </a>
+                <div id="InternalControlManagement" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <div class="">
+                            <a class="nav-link  w-12rem sub-nav-link" href="#" data-toggle="collapse" data-target="#InternalControl" aria-expanded="true"
+                                aria-controls="InternalControl">
+                                <span>Internal Control Subscriber Manager
+                            </a>
+                            <div id="InternalControl" class="collapse show" aria-labelledby="headingTwo" data-parent="#InternalControl">
+                                <div class="">
+                                    <div class="collapse-inner">
+                                        <a class="collapse-item active" href="../InternalControlManagement/CreateNewPerformanceSubscriber.html">Create New Performance Subscriber</a>
+                                        <a class="collapse-item" href="../InternalControlManagement/ViewInternalControlSubscribers.html">View Internal Control Subscribers</a>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a class="collapse-item" href="../InternalControlManagement/ViewProcesses.html">View Processes</a>
+                                <a class="collapse-item" href="../InternalControlManagement/ViewControlChart.html">View Control Chart</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </li>
 
     <li class="nav-item">
@@ -1202,114 +1224,70 @@ Admin Management
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
-            <!-- DataTales Example -->
-            <div class="card shadow mb-4">
+        <div class="container py-2">
+            
+            <div class="card">
                 <div class="card-body">
-                    <div class="row mb-5">
-                        <div class="col-lg-5">
+                          <div class="col-md-10 mx-auto">
 
-                            <div class="row">
-                                <!-- <div class="col-lg-6">
-                                    <a href="CreateNewPerformanceSubscriber.html" class="btn btn-primary mb-2 w-100 mr-3">
-                                        Add New Subscriber
-                                </a>
-                                </div> -->
-                                <div class="col-lg-6">
-                                    <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
-                                        Export Raw Data
-                                    </button>
+
+                            <form class="border p-4 rounded-lg bg-light">
+                                <div class="form-group">
+                                  <label for="selectCompany">Select Company</label>
+                                  <select class="form-control" id="selectCompany">
+                                    <option>Company A</option>
+                                    <option>Company B</option>
+                                    <option>Company C</option>
+                                  </select>
                                 </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-2">
-                            <div class="text-center my-lg-0 my-3">
-                                <p class="mb-0">Total KPI: 350</p> 
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-5">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group mb-0 d-flex">
-                                        <select class="form-control mb-3" id="dateFilter">
-                                            <option disabled selected value="all">Filter by</option>
-                                            <option value="last24">Last 24 Hours</option>
-                                            <option value="last7">Last 7 Days</option>
-                                            <option value="last30">Last 30 Days</option>
-                                        </select>
-                                    </div>
+                                <div class="form-group">
+                                  <label for="totalUsers">Enter Total Users</label>
+                                  <input type="number" class="form-control" id="totalUsers" placeholder="Enter total users">
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="">
-                                        <input cl type="date" id="Custom" name="Custom"
-                                            class=" mb-3 form-control">
-                                    </div>
+                                <div class="form-group">
+                                  <label for="selectBillingCycle">Select Billing Cycle</label>
+                                  <select class="form-control" id="selectBillingCycle">
+                                    <option>Monthly</option>
+                                    <option>Quarterly</option>
+                                    <option>Yearly</option>
+                                  </select>
                                 </div>
-                            </div>
-
-
-
-
-
-
-                        </div>
-
-
-                    </div>
-
-                    <div class="table-responsive">
-
-                        <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                              <tr>
-                                <th class="d-flex flex-column">
-                                  <label for="selectAll">Select All</label>
-                                  <input type="checkbox" id="selectAll">
-                                </th>
-                                <th>SN</th>
-                                <th>Company Name</th>
-                                <th>Location</th>
-                                <th>Score Card Title</th>
-                                <th>Assigned Department</th>
-                                <th>Timestamp</th>
-                                <!-- <th>Action</th> -->
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td><input type="checkbox"></td>
-                                <td>1</td>
-                                <td>Example Company</td>
-                                <td>Location Name</td>
-                                <td>Score Card Title</td>
-                                <td>Assigned Department</td>
-                                <td>Timestamp</td>
-                                <!-- <td>
-                                  <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Action
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="actionDropdown">
-                                      <a class="dropdown-item" href="#">Suspend</a>
-                                      <a class="dropdown-item" href="#">Renew</a>
-                                    </div>
+                                <div class="form-group">
+                                  <label for="amount">Amount</label>
+                                  <input type="text" class="form-control" id="amount" readonly="">
+                                </div>
+                                <div class="form-group">
+                                  <label for="paymentMode">Payment Mode</label>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMode" id="cardPayment" value="Card">
+                                    <label class="form-check-label" for="cardPayment" style="color: blue;">Card</label>
                                   </div>
-                                </td> -->
-                              </tr>
-                              <!-- Repeat the above row for additional data -->
-                            </tbody>
-                          </table>
-                          
-                          
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMode" id="transferPayment" value="Transfer">
+                                    <label class="form-check-label" for="transferPayment" style="color: green;">Transfer</label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="paymentMode" id="chequePayment" value="Cheque">
+                                    <label class="form-check-label" for="chequePayment" style="color: red;">Cheque</label>
+                                  </div>
+                                </div>
+                                <div class="text-right">
+                                  <button type="submit" class="btn btn-primary">Confirm Payment</button>
+                                </div>
+                              </form>
+                              
+                              
+                              
 
-                    </div>
+
+
+
+                          </div>
+                      
 
                 </div>
             </div>
+        
         </div>
         <!-- /.container-fluid -->
       </div>
