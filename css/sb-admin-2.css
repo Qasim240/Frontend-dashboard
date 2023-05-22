@@ -11335,17 +11335,24 @@ body.sidebar-toggled footer.sticky-footer {
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
-/* @media (max-width: 992px) {
-  .nav-link:before {
-    content: "";
-    width: 7px;
-    height: 20px;
-    border-width: 14px;
-    border-style: solid;
-    border-color: transparent transparent #E07AAB transparent;
-    position: absolute;
-    left: -28px;
-    z-index: 9999;
-    transform: rotate(-90deg);
-  }
-} */
+@media (max-width: 992px) {
+h1{
+ display: none;
+}
+a.d-none.d-sm-inline-block.btn.btn-sm.btn-primary.shadow-sm {
+ margin-top: 10px;
+}
+
+}
+
+.align-items-baseline.d-flex {
+  flex-wrap: wrap;
+ 
+
+}
+a.d-none.d-sm-inline-block.btn.btn-sm.btn-primary.shadow-sm.mr-3 {
+  display: block !important;
+}
+a.d-none.d-sm-inline-block.btn.btn-sm.btn-primary.shadow-sm {
+  display: block !important;
+}
