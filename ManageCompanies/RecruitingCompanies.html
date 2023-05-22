@@ -1186,97 +1186,138 @@
 
             <!-- Main Content -->
             <div class="container my-4">
+                <div class="card shadow mb-4">
 
-                <div class="row">
-                    <div class="col-lg-4">
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="form-group mb-0 d-flex">
-                            <select class="form-control mb-3" id="dateFilter">
-                                <option disabled="" selected="" value="all">Filter by</option>
-                                <option value="last24">Last 24 Hours</option>
-                                <option value="last7">Last 7 Days</option>
-                                <option value="last30">Last 30 Days</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="">
-                            <input cl="" type="date" id="Custom" name="Custom" class=" mb-3 form-control">
-                        </div>
-                    </div>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>SN</th>
-                                <th>Company Name</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>Location</th>
-                                <th>Contact Person Full Name</th>
-                                <th>Contact Email</th>
-                                <th>Contact Phone</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>ABC Inc.</td>
-                                <td>abc@example.com</td>
-                                <td>+1 (555) 555-1212</td>
-                                <td>New York, USA</td>
-                                <td>John Doe</td>
-                                <td>johndoe@example.com</td>
-                                <td>+1 (555) 555-1212</td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
-                                            id="actionDropdown" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Actions
+                    <div class="card-body">
+
+                        <div class="row mb-5">
+                            <div class="col-lg-5">
+        
+                                <div class="row">
+                                    <!-- <div class="col-lg-6">
+                                        <button class="btn btn-primary mb-2 w-100 mr-3" data-toggle="modal"
+                                            data-target="#newUserModal">
+                                            Create New User
                                         </button>
-                                        <div class="dropdown-menu" aria-labelledby="actionDropdown">
-                                            <a class="dropdown-item" href="#">View Audit Trail</a>
-                                            <a class="dropdown-item" href="#">View Talent Briefs</a>
-                                            <a class="dropdown-item" href="#">View Hired Candidates</a>
-                                            <a class="dropdown-item" href="#">View Shortlisted Candidates</a>
+                                    </div> -->
+                                    <div class="col-lg-6">
+                                        <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
+                                            Export Raw Data
+                                        </button>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-lg-2">
+                                <div class="text-center my-lg-0 my-3">
+                                    <p class="mb-0">Total Candidates: 350</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="col-lg-5">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-0 d-flex">
+                                            <select class="form-control mb-3" id="dateFilter">
+                                                <option disabled selected value="all">Filter by</option>
+                                                <option value="last24">Last 24 Hours</option>
+                                                <option value="last7">Last 7 Days</option>
+                                                <option value="last30">Last 30 Days</option>
+                                            </select>
                                         </div>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>XYZ Ltd.</td>
-                                <td>xyz@example.com</td>
-                                <td>+44 20 7123 4567</td>
-                                <td>London, UK</td>
-                                <td>Jane Doe</td>
-                                <td>janedoe@example.com</td>
-                                <td>+44 20 7123 4567</td>
-                                <td>
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary dropdown-toggle" type="button"
-                                            id="actionDropdown" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-                                            Actions
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="actionDropdown">
-                                            <a class="dropdown-item" href="#">View Audit Trail</a>
-                                            <a class="dropdown-item" href="#">View Talent Briefs</a>
-                                            <a class="dropdown-item" href="#">View Hired Candidates</a>
-                                            <a class="dropdown-item" href="#">View Shortlisted Candidates</a>
+                                    <div class="col-lg-6">
+                                        <div class="">
+                                            <input cl type="date" id="Custom" name="Custom"
+                                                class=" mb-3 form-control">
                                         </div>
                                     </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
+                                </div>
+        
+    
+                            </div>
+        
+        
+                        </div>
+        
+        
+                        <div class="table-responsive">
+                            <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>SN</th>
+                                        <th>Company Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Location</th>
+                                        <th>Contact Person Full Name</th>
+                                        <th>Contact Email</th>
+                                        <th>Contact Phone</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>ABC Inc.</td>
+                                        <td>abc@example.com</td>
+                                        <td>+1 (555) 555-1212</td>
+                                        <td>New York, USA</td>
+                                        <td>John Doe</td>
+                                        <td>johndoe@example.com</td>
+                                        <td>+1 (555) 555-1212</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                    id="actionDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Actions
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="actionDropdown">
+                                                    <a class="dropdown-item" href="#">View Audit Trail</a>
+                                                    <a class="dropdown-item" href="#">View Talent Briefs</a>
+                                                    <a class="dropdown-item" href="#">View Hired Candidates</a>
+                                                    <a class="dropdown-item" href="#">View Shortlisted Candidates</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>XYZ Ltd.</td>
+                                        <td>xyz@example.com</td>
+                                        <td>+44 20 7123 4567</td>
+                                        <td>London, UK</td>
+                                        <td>Jane Doe</td>
+                                        <td>janedoe@example.com</td>
+                                        <td>+44 20 7123 4567</td>
+                                        <td>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                                    id="actionDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Actions
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="actionDropdown">
+                                                    <a class="dropdown-item" href="#">View Audit Trail</a>
+                                                    <a class="dropdown-item" href="#">View Talent Briefs</a>
+                                                    <a class="dropdown-item" href="#">View Hired Candidates</a>
+                                                    <a class="dropdown-item" href="#">View Shortlisted Candidates</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+        
+                        </div>
 
-                </div>
+
+                        </div></div>
+              
 
             </div>
             <!-- End of Main Content -->

@@ -1190,15 +1190,33 @@
 
                             <!-- Page Heading -->
                             <div class="d-sm-flex align-items-center justify-content-between mb-4 ">
-                                <h1 class="h3 mb-0 text-gray-800">Gblobal Dashboard</h1>
-                                <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                        class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                                <h1 class="h3 mb-0 text-gray-800">Global Dashboard</h1>
+                                <div class="d-flex align-items-baseline">
+        
+                                    <div class="form-group mb-0 d-flex">
+                                        <select class="form-control mb-3" id="dateFilter">
+                                            <option disabled selected value="all">Filter by</option>
+                                            <option value="last24">Last 24 Hours</option>
+                                            <option value="last7">Last 7 Days</option>
+                                            <option value="last30">Last 30 Days</option>
+                                        </select>
+                                    </div>
+                                    <div class="mx-3">
+                                        <input cl type="date" id="Custom" name="Custom" class=" mb-3 form-control">
+                                    </div>
+                                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-3"><i
+                                            class="fas fa-download fa-sm text-white-50 "></i> download Raw Data </a>
+                                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                            class="fas fa-download fa-sm text-white-50"></i> Print as PDF</a>
+                                </div>
                             </div>
+        
 
                             <!-- Content Row -->
                             <div class="row text-center">
                                 <div class="container-fluid">
-                                    <h1 class="mb-3 text-primary mb-3">Performance Dashboard</h1>
+                                    <h1 class="mb-3 text-primary mb-3">Learning Dashboard
+                                    </h1>
                                     <div class="row">
                                         <!-- counter -->
                                         <div class="col-xl-3 col-md-6 mb-4">
@@ -1424,7 +1442,7 @@
                                                                 <div class=""></div>
                                                             </div>
                                                         </div>
-                                                        <canvas id="TrendofTotalSubscribers"
+                                                        <canvas id="learningTrendofTotalSubscribers"
                                                             style="display: block; width: 653px; height: 320px;" width="653"
                                                             height="320" class="chartjs-render-monitor"></canvas>
                                                     </div>
@@ -1448,7 +1466,7 @@
                                                                 <div class=""></div>
                                                             </div>
                                                         </div>
-                                                        <canvas id="TrendofTotalPartners"
+                                                        <canvas id="LearningTrendofTotalPartners"
                                                             style="display: block; width: 653px; height: 500px;" width="653"
                                                             height="320" class="chartjs-render-monitor"></canvas>
                                                     </div>
@@ -1472,7 +1490,7 @@
                                                                 <div class=""></div>
                                                             </div>
                                                         </div>
-                                                        <canvas id="TrendofTotalCourseEnrolments"
+                                                        <canvas id="LearningTrendofTotalCourseEnrolments"
                                                             style="display: block; width: 653px; height: 500px;" width="653"
                                                             height="320" class="chartjs-render-monitor"></canvas>
                                                     </div>
@@ -1484,8 +1502,7 @@
                                         <div class="col-lg-6">
                                             <div class="card shadow my-4">
                                                 <div class="card-header py-3">
-                                                    <h6 class="m-0 font-weight-bold text-primary">Trend of Total Assessments
-                                                        Created</h6>
+                                                    <h6 class="m-0 font-weight-bold text-primary">Trend of Amount Withdrawn</h6>
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="chart-area chart-trend">
@@ -1497,7 +1514,7 @@
                                                                 <div class=""></div>
                                                             </div>
                                                         </div>
-                                                        <canvas id="TrendofTotalAssessmentsCreated"
+                                                        <canvas id="LearningTrendofTotalAssessmentsCreated"
                                                             style="display: block; width: 653px; height: 500px;" width="653"
                                                             height="320" class="chartjs-render-monitor"></canvas>
                                                     </div>
@@ -1522,7 +1539,7 @@
                                                                 <div class=""></div>
                                                             </div>
                                                         </div>
-                                                        <canvas id="AssessmentSubmitted"
+                                                        <canvas id="learningAssessmentSubmitted"
                                                             style="display: block; width: 653px; height: 500px;" width="653"
                                                             height="320" class="chartjs-render-monitor"></canvas>
                                                     </div>
@@ -1547,7 +1564,7 @@
                                                                 <div class=""></div>
                                                             </div>
                                                         </div>
-                                                        <canvas id="CourseEnrolment" style="display: block; width: 653px; height: 320px;" width="653"
+                                                        <canvas id="learningCourseEnrolment" style="display: block; width: 653px; height: 320px;" width="653"
                                                             height="320" class="chartjs-render-monitor"></canvas>
                                                     </div>
                                                     <hr>
@@ -1572,7 +1589,7 @@
                                                                 <div class=""></div>
                                                             </div>
                                                         </div>
-                                                        <canvas id="ExternalCourses"
+                                                        <canvas id="learningExternalCourses"
                                                             style="display: block; width: 653px; height: 320px;" width="653"
                                                             height="320" class="chartjs-render-monitor"></canvas>
                                                     </div>
@@ -1599,7 +1616,7 @@
                                                                 <div class=""></div>
                                                             </div>
                                                         </div>
-                                                        <canvas id="facilitatorsChart"
+                                                        <canvas id="LearningfacilitatorsChart"
                                                             style="display: block; width: 653px; height: 320px;" width="653"
                                                             height="320" class="chartjs-render-monitor"></canvas>
                                                     </div>
@@ -1668,8 +1685,8 @@
                 <script src="vendor/chart.js/Chart.min.js"></script>
                 <!-- Page level custom scripts -->
 
-                <script src="js/demo/reuseablechart.js"></script>
-                <script src="js/demo/barcharts.js"></script>
+                <!-- <script src="js/demo/reuseablechart.js"></script> -->
+                <script src="learningDashboardchart.js"></script>
 
 
         </body>

@@ -10549,7 +10549,7 @@ a:focus {
     width: 100%;
     text-align: left;
     padding: 1rem;
-    width: 14rem;
+    width: 17rem;
   }
   .w-12rem{
     width: 12rem !important;
@@ -11335,7 +11335,7 @@ body.sidebar-toggled footer.sticky-footer {
 .rate > label:hover ~ input:checked ~ label {
     color: #c59b08;
 }
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .nav-link:before {
     content: "";
     width: 7px;
@@ -11348,4 +11348,4 @@ body.sidebar-toggled footer.sticky-footer {
     z-index: 9999;
     transform: rotate(-90deg);
   }
-}
+} */

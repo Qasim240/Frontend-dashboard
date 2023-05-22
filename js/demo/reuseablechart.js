@@ -21,6 +21,7 @@ var data1 = {
 createChart('TrendofTotalSubscribers', 'line',data1)
 createChart('TrendofTotalPartners', 'line',data1)
 createChart('TrendofTotalCourseEnrolments', 'line',data1)
+createChart('leaveChart', 'line',data1)
 createChart('TrendofTotalAssessmentsCreated', 'line',data1)
 createChart('AssessmentSubmitted', 'line',data1)
 

@@ -1206,76 +1206,125 @@ Admin Management
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="row">
-                                    <div class="col-md-4 mb-3">
-                                      <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search...">
-                                        <div class="input-group-append">
-                                          <button class="btn btn-primary" type="button">Search</button>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-4 mb-3">
-                                        <div class="dropdown">
-                                            <button class="btn btn-primary dropdown-toggle w-100" type="button" id="filterMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Filter
-                                            </button>
-                                            <div class="dropdown-menu  w-100" aria-labelledby="filterMenu">
-                                              <h6 class="dropdown-header">Filter By</h6>
-                                            
-                                              <a class="dropdown-item" href="#">Parameter</a>
-                                              <div class="dropdown-divider"></div>
-                                              <h6 class="dropdown-header">Time Range</h6>
-                                              <a class="dropdown-item" href="#">Last 24 Hours</a>
-                                              <a class="dropdown-item" href="#">Last 7 Days</a>
-                                              <a class="dropdown-item" href="#">Last One Month</a>
-                                              <div class="dropdown-divider"></div>
-                                              <h6 class="dropdown-header">Custom Range</h6>
-                                              <div class="form-group px-3">
-                                                <label for="fromDate">From:</label>
-                                                <input type="date" class="form-control" id="fromDate">
-                                              </div>
-                                              <div class="form-group px-3">
-                                                <label for="toDate">To:</label>
-                                                <input type="date" class="form-control" id="toDate">
-                                              </div>
-                                              <div class="px-3 pb-3">
-                                                <button class="btn btn-primary" type="button">Apply</button>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          
-                                      </div>
-                                    <div class="col-lg-4">
-                                        <div class="dropdown">
-                                            <button class="btn btn-primary text- dropdown-toggle w-100" type="button" id="countryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Filter by Country
-                                            </button>
-                                            <div class="dropdown-menu w-100" aria-labelledby="countryDropdown">
-                                              <a class="dropdown-item" href="#">USA</a>
-                                              <a class="dropdown-item" href="#">Canada</a>
-                                              <a class="dropdown-item" href="#">Mexico</a>
-                                              <!-- Add more country names as needed -->
-                                            </div>
-                                          </div>
-                                    </div>
-
-
-
-
-                                    </div>
+                               
                                    
-
-
-
-
-</div>
+                                    </div>
                                 <!-- DataTales Example -->
                                 <div class="card shadow mb-4">
                                     <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                              <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search...">
+                                                <div class="input-group-append">
+                                                  <button class="btn btn-primary" type="button">Search</button>
+                                                </div>
+                                              </div>
+                                            </div>
+        
+                                            <div class="col-md-4 mb-3">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle w-100" type="button" id="filterMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Filter
+                                                    </button>
+                                                    <div class="dropdown-menu  w-100" aria-labelledby="filterMenu">
+                                                      <h6 class="dropdown-header">Filter By</h6>
+                                                    
+                                                      <a class="dropdown-item" href="#">Parameter</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <h6 class="dropdown-header">Time Range</h6>
+                                                      <a class="dropdown-item" href="#">Last 24 Hours</a>
+                                                      <a class="dropdown-item" href="#">Last 7 Days</a>
+                                                      <a class="dropdown-item" href="#">Last One Month</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <h6 class="dropdown-header">Custom Range</h6>
+                                                      <div class="form-group px-3">
+                                                        <label for="fromDate">From:</label>
+                                                        <input type="date" class="form-control" id="fromDate">
+                                                      </div>
+                                                      <div class="form-group px-3">
+                                                        <label for="toDate">To:</label>
+                                                        <input type="date" class="form-control" id="toDate">
+                                                      </div>
+                                                      <div class="px-3 pb-3">
+                                                        <button class="btn btn-primary" type="button">Apply</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                              </div>
+                                            <div class="col-lg-4">
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary text- dropdown-toggle w-100" type="button" id="countryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Filter by Country
+                                                    </button>
+                                                    <div class="dropdown-menu w-100" aria-labelledby="countryDropdown">
+                                                      <a class="dropdown-item" href="#">USA</a>
+                                                      <a class="dropdown-item" href="#">Canada</a>
+                                                      <a class="dropdown-item" href="#">Mexico</a>
+                                                      <!-- Add more country names as needed -->
+                                                    </div>
+                                                  </div>
+                                            </div>
+        
+                                            </div>  
+                                        <div class="row mb-5">
+                                            <div class="col-lg-5">
+                        
+                                                <div class="row">
+                                                    <!-- <div class="col-lg-6">
+                                                        <button class="btn btn-primary mb-2 w-100 mr-3" data-toggle="modal"
+                                                            data-target="#newUserModal">
+                                                            Create New User
+                                                        </button>
+                                                    </div> -->
+                                                    <div class="col-lg-6">
+                                                        <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
+                                                            Export Raw Data
+                                                        </button>
+                                                    </div>
+                                                </div>
+                        
+                                            </div>
+                        
+                                            <div class="col-lg-2">
+                                                <div class="text-center my-lg-0 my-3">
+                                                    <p class="mb-0">Total Candidates: 350</p>
+                                                </div>
+                                            </div>
+                        
+                        
+                                            <div class="col-lg-5">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <div class="form-group mb-0 d-flex">
+                                                            <select class="form-control mb-3" id="dateFilter">
+                                                                <option disabled selected value="all">Filter by</option>
+                                                                <option value="last24">Last 24 Hours</option>
+                                                                <option value="last7">Last 7 Days</option>
+                                                                <option value="last30">Last 30 Days</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="">
+                                                            <input cl type="date" id="Custom" name="Custom"
+                                                                class=" mb-3 form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                                            </div>
+                        
+                        
+                                        </div>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0">
+                                            <table class="table table-bordered data-table" id="dataTable" width="100%" cellspacing="0" style="width: 100%;">
                                                 <thead>
                                                   <tr>
                                                     <th>SN</th>
