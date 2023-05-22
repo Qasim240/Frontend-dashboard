@@ -21,6 +21,25 @@ var data = {
 var data2 = {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
     datasets: [{
+        label: 'Total Approved Leave Request',
+        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811],
+        fill: false,
+        borderColor: '#2196f3',
+        backgroundColor: '#2196f3',
+        borderWidth: 1
+    },
+    {
+        label: 'Total Declined Leave Request',
+        data: [100, 20, 303, 2020, 4545, 1000, 2323, 30, 4000, 5050],
+        fill: false,
+        borderColor: '#ff5722',
+        backgroundColor: '#ff5722',
+        borderWidth: 1
+    }]
+}
+var data3 = {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
+    datasets: [{
         label: 'Total Resumption',
         data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811],
         fill: false,
@@ -29,7 +48,7 @@ var data2 = {
         borderWidth: 1
     },
     {
-        label: 'Total Late Resumption',
+        label: 'Late Resumption',
         data: [100, 20, 303, 2020, 4545, 1000, 2323, 30, 4000, 5050],
         fill: false,
         borderColor: '#ff5722',
@@ -41,4 +60,8 @@ leavemanachart('LeaveTrendofTotalSubscribers', 'line', data);
 leavemanachart('leaveTrendofTotalPartners', 'line', data);
 leavemanachart('LeaveTrendofTotalCourseEnrolments', 'line', data);
 leavemanachart('LeaveTotalApproved', 'line', data);
-leavemanachart('LeaveTotalDeclined', 'line', data1);
+leavemanachart('LeaveLateResumptionchart', 'line', data3);
+leavemanachart('LeaveTotalDeclined', 'line', data);
+leavemanachart('LeaveTotalResumption', 'line', data);
+leavemanachart('LeaveLateResumption', 'line', data);
+leavemanachart('LeaveApprovedvsDecline', 'bar', data2);
