@@ -56,12 +56,15 @@ var data3 = {
         borderWidth: 1
     }]
 }
+leavemanachart('LeaveTotalDeclined', 'line', data);
+leavemanachart('LeaveTotalResumption', 'line', data);
+leavemanachart('LeaveTrendTotalResumption', 'line', data3);
+leavemanachart('LeaveLateResumption', 'line', data);
 leavemanachart('LeaveTrendofTotalSubscribers', 'line', data);
 leavemanachart('leaveTrendofTotalPartners', 'line', data);
 leavemanachart('LeaveTrendofTotalCourseEnrolments', 'line', data);
 leavemanachart('LeaveTotalApproved', 'line', data);
-leavemanachart('LeaveLateResumptionchart', 'line', data3);
-leavemanachart('LeaveTotalDeclined', 'line', data);
-leavemanachart('LeaveTotalResumption', 'line', data);
-leavemanachart('LeaveLateResumption', 'line', data);
 leavemanachart('LeaveApprovedvsDecline', 'bar', data2);
+leavemanachart('LeaveLateResumptionchart', 'line', data3);
+
+

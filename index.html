@@ -58,7 +58,7 @@
                         <div id="GlobalDashboard" class="collapse " aria-labelledby="headingTwo"
                             data-parent="#Dashboard">
                             <div class="bg-white py-2 collapse-inner rounded">
-                                <a class="collapse-item active" href="index.html">Audit Dashboard</a>
+                                <a class="collapse-item" href="index.html">Audit Dashboard</a>
                                 <a class="collapse-item" href="HRAdministrationDashboard.html">HR Administration
                                     Dashboard</a>
                                 <a class="collapse-item" href="HRAdvisoryDashboard.html">HR Advisory Dashboard</a>
@@ -915,7 +915,7 @@
                     data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
                         <div class=" ">
-                            <a class="collapse-item" href="AdminManagement.html">
+                            <a class="collapse-item" href="./AdminManagement/ManageAdmins.html">
                                 Manage Admins
                             </a>
                             <!-- <a class="collapse-item" href="Error.html">
@@ -1257,8 +1257,8 @@
                                 </form>
                             </div>
                         </li>
-                        <li class="nav-item dropdown no-arrow mx-1 d-md-block d-none">
-                            <a class="nav-link" href="">
+                        <li class="nav-item dropdown no-arrow mx-1 d-lg-block d-none">
+                            <a class="nav-link small">
                                 Last login: May 6, 2023 at 10:30pm
 
                             </a>
@@ -1366,26 +1366,31 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4 ">
-                        <h1 class="h3 mb-0 text-gray-800">Global Dashboard</h1>
-                        <div class="d-flex align-items-baseline">
-
-                            <div class="form-group mb-0 d-flex">
-                                <select class="form-control mb-3" id="dateFilter">
-                                    <option disabled selected value="all">Filter by</option>
-                                    <option value="last24">Last 24 Hours</option>
-                                    <option value="last7">Last 7 Days</option>
-                                    <option value="last30">Last 30 Days</option>
-                                </select>
+                    <div class="row mb-lg-0 mb-3">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="form-group mb-0 d-flex">
+                                    <select class="form-control mb-3" id="dateFilter">
+                                        <option disabled selected value="all">Filter by</option>
+                                        <option value="last24">Last 24 Hours</option>
+                                        <option value="last7">Last 7 Days</option>
+                                        <option value="last30">Last 30 Days</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="mx-3">
-                                <input cl type="date" id="Custom" name="Custom" class=" mb-3 form-control">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="">
+                                    <input cl type="date" id="Custom" name="Custom" class=" mb-3 form-control">
+                                </div>
                             </div>
-                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mr-3"><i
-                                    class="fas fa-download fa-sm text-white-50 "></i> download Raw Data </a>
+                           <div class="col-lg-3 col-md-6">
                             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                    class="fas fa-download fa-sm text-white-50"></i> Print as PDF</a>
-                        </div>
+                                class="fas fa-download fa-sm text-white-50 "></i> download Raw Data </a>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Print as PDF</a>
+                           </div>
+                        
                     </div>
 
                     <!-- Content Row -->
