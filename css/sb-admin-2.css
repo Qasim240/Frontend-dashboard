@@ -11356,3 +11356,9 @@ a.d-none.d-sm-inline-block.btn.btn-sm.btn-primary.shadow-sm.mr-3 {
 a.d-none.d-sm-inline-block.btn.btn-sm.btn-primary.shadow-sm {
   display: block !important;
 }
+h1{
+  text-align: start;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px !important;
+}
