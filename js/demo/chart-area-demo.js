@@ -207,7 +207,7 @@ var myLineChart = new Chart(ctx, {
   }
 });
 
-//Trend of Total Successful Logins
+//  Total Successful Logins
 var ctx = document.getElementById("myLoginChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
@@ -387,7 +387,7 @@ var myLineChart = new Chart(ctx, {
   }
 });
 
-// trend of Password Reset
+//   Password Reset
 var ctx = document.getElementById("PasswordReset");
 var myLineChart = new Chart(ctx, {
   type: 'line',
@@ -478,7 +478,7 @@ var myLineChart = new Chart(ctx, {
 });
 
 
-// trend of Password Reset
+//   Password Reset
 var ctx = document.getElementById("SessionDuration");
 var myLineChart = new Chart(ctx, {
   type: 'line',

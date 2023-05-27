@@ -1204,8 +1204,8 @@
 
                     <!-- Main Content -->
                     <div id="content">
-  <!-- Topbar -->
-  <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+   <!-- Topbar -->
+   <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0 mb-0" id="sidebarToggle"><i
                 class="fa fa-bars"></i></button>
@@ -1255,13 +1255,7 @@
                 </form>
             </div>
         </li>
-        <li class="nav-item dropdown no-arrow mx-1 d-lg-block d-none">
-            <a class="nav-link small">
-                Last login: May 6, 2023 at 10:30pm
-
-            </a>
-
-        </li>
+      
 
         <!-- Nav Item - Alerts -->
         <li class="nav-item dropdown no-arrow mx-1">
@@ -1319,6 +1313,13 @@
         <div class="topbar-divider d-none d-sm-block"></div>
 
         <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow mx-1 d-lg-block d-none">
+            <a class="nav-link small">
+                Last login: May 6, 2023 at 10:30pm
+
+            </a>
+
+        </li>
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1347,9 +1348,10 @@
                 </a>
             </div>
         </li>
+        
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle btn-primary" href="signinDashboard.html"> <span
-                    class="mr-2 text-white small">Signin</span>
+                    class="mr-2 text-white small">Sign in</span>
 
             </a>
 
@@ -1362,6 +1364,7 @@
 
                         <!-- Begin Page Content -->
                         <div class="container-fluid">
+                            <h1 class="mb-3 text-primary mb-3">Learning Dashboard </h1>
 
                             <!-- Page Heading -->
                             <div class="row mb-lg-0 mb-3">
@@ -1377,7 +1380,8 @@
                                 </div>
                                 <div class="col-lg-3 col-md-6">
                                     <div class="">
-                                        <input cl type="date" id="Custom" name="Custom" class=" mb-3 form-control">
+                                        <input  placeholder="Custom Calendar" class="form-control" type="text" onfocus="(this.type='date')" id="date" />
+
                                     </div>
                                 </div>
                                <div class="col-lg-3 col-md-6">
@@ -1395,8 +1399,6 @@
                             <!-- Content Row -->
                             <div class="row text-center">
                                 <div class="container-fluid">
-                                    <h1 class="mb-3 text-primary mb-3">Learning Dashboard
-                                    </h1>
                                     <div class="row">
                                         <!-- counter -->
                                         <div class="col-xl-3 col-md-6 mb-4">
@@ -1609,7 +1611,7 @@
                                         <div class="col-lg-6">
                                             <div class="card shadow my-4">
                                                 <div class="card-header py-3">
-                                                    <h6 class="m-0 font-weight-bold text-primary">Trend of Total Subscribers
+                                                    <h6 class="m-0 font-weight-bold text-primary">  Total Subscribers
                                                     </h6>
                                                 </div>
                                                 <div class="card-body">
@@ -1634,7 +1636,7 @@
                                         <div class="col-lg-6">
                                             <div class="card shadow my-4">
                                                 <div class="card-header py-3">
-                                                    <h6 class="m-0 font-weight-bold text-primary">Trend of Total Partners</h6>
+                                                    <h6 class="m-0 font-weight-bold text-primary">  Total Partners</h6>
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="chart-area chart-trend">
@@ -1658,7 +1660,7 @@
                                         <div class="col-lg-6">
                                             <div class="card shadow my-4">
                                                 <div class="card-header py-3">
-                                                    <h6 class="m-0 font-weight-bold text-primary">Trend of Total Course Enrolments</h6>
+                                                    <h6 class="m-0 font-weight-bold text-primary">  Total Course Enrolments</h6>
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="chart-area chart-trend">
@@ -1682,7 +1684,7 @@
                                         <div class="col-lg-6">
                                             <div class="card shadow my-4">
                                                 <div class="card-header py-3">
-                                                    <h6 class="m-0 font-weight-bold text-primary">Trend of Amount Withdrawn</h6>
+                                                    <h6 class="m-0 font-weight-bold text-primary">  Amount Withdrawn</h6>
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="chart-area chart-trend">
@@ -1706,7 +1708,7 @@
                                         <div class="col-lg-6">
                                             <div class="card shadow my-4">
                                                 <div class="card-header py-3">
-                                                    <h6 class="m-0 font-weight-bold text-primary">Trend of Total Assessment
+                                                    <h6 class="m-0 font-weight-bold text-primary">  Total Assessment
                                                         Submitted</h6>
                                                 </div>
                                                 <div class="card-body">

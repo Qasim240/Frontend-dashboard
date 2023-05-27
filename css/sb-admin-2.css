@@ -11362,3 +11362,22 @@ h1{
   margin-top: 20px;
   margin-bottom: 20px !important;
 }
+
+
+.btn{
+  text-transform: capitalize;
+}
+
+  #dataTable thead th:nth-child(1),
+  #dataTable thead th:nth-child(2) {
+    position: relative;
+    padding-right: 11px !important;
+
+  }
+
+  #dataTable thead th:nth-child(1)::before,
+  #dataTable thead th:nth-child(1)::after,
+  #dataTable thead th:nth-child(2)::before,
+  #dataTable thead th:nth-child(2)::after {
+    display: none !important;
+  }

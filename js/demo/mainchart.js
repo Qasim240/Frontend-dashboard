@@ -1,5 +1,5 @@
 
-// trend of Password Reset
+//   Password Reset
 var ctx = document.getElementById("DeclinedClaims");
 var myLineChart = new Chart(ctx, {
   type: 'line',
@@ -94,7 +94,7 @@ var myLineChart = new Chart(ctx, {
 
 
 
-// trend of Password Reset
+//   Password Reset
 var ctx = document.getElementById("ClaimRequestedAmount");
 var myLineChart = new Chart(ctx, {
   type: 'line',
@@ -192,7 +192,7 @@ var myLineChart = new Chart(ctx, {
 
 
 
-// trend of Password Reset
+//   Password Reset
 var ctx = document.getElementById("Approvedclaim");
 var myLineChart = new Chart(ctx, {
   type: 'line',
@@ -290,7 +290,7 @@ var myLineChart = new Chart(ctx, {
 
 
 
-// trend of Password Reset
+//   Password Reset
 var ctx = document.getElementById("ClaimsAmount");
 var myLineChart = new Chart(ctx, {
   type: 'line',
@@ -387,7 +387,7 @@ var myLineChart = new Chart(ctx, {
 
 
 
-// trend of Password Reset
+//   Password Reset
 var ctx = document.getElementById("SubscribersTrend");
 var myLineChart = new Chart(ctx, {
   type: 'line',
@@ -482,7 +482,7 @@ var myLineChart = new Chart(ctx, {
 
 
 
-// trend of Password Reset
+//   Password Reset
 var ctx = document.getElementById("PartnersTrend");
 var myLineChart = new Chart(ctx, {
   type: 'line',

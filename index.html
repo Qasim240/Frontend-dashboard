@@ -1257,13 +1257,7 @@
                                 </form>
                             </div>
                         </li>
-                        <li class="nav-item dropdown no-arrow mx-1 d-lg-block d-none">
-                            <a class="nav-link small">
-                                Last login: May 6, 2023 at 10:30pm
-
-                            </a>
-
-                        </li>
+                      
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
@@ -1321,6 +1315,13 @@
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow mx-1 d-lg-block d-none">
+                            <a class="nav-link small">
+                                Last login: May 6, 2023 at 10:30pm
+
+                            </a>
+
+                        </li>
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1349,9 +1350,10 @@
                                 </a>
                             </div>
                         </li>
+                        
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle btn-primary" href="signinDashboard.html"> <span
-                                    class="mr-2 text-white small">Signin</span>
+                                    class="mr-2 text-white small">Sign in</span>
 
                             </a>
 
@@ -1361,10 +1363,11 @@
 
                 </nav>
                 <!-- End of Topbar -->
-
+              
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
+                    <h1 class="mb-3 text-primary">Audit Dashboard
+                    </h1>
                     <!-- Page Heading -->
                     <div class="row mb-lg-0 mb-3">
                             <div class="col-lg-3 col-md-6">
@@ -1379,7 +1382,7 @@
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="">
-                                    <input cl type="date" id="Custom" name="Custom" class=" mb-3 form-control">
+                                    <input  placeholder="Custom Calendar" class="form-control" type="text" onfocus="(this.type='date')" id="date" />
                                 </div>
                             </div>
                            <div class="col-lg-3 col-md-6">
@@ -1397,8 +1400,7 @@
                     <!-- Content Row -->
                     <div class="row text-center">
                         <div class="container-fluid">
-                            <h1 class="mb-3 text-primary">Audit Dashboard
-                            </h1>
+                            
 
                             <div class="row">
                                 <div class="col-xl-3 col-md-6 mb-4">
@@ -1525,45 +1527,34 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="chart-area">
-                                                <div class="chartjs-size-monitor">
-                                                    <div class=""></div>
-                                                    <div class=""></div>
-                                                </div> 
-                                                <canvas id="logndetails"
-                                                    style="display: block; width: 653px; height: 320px;" width="653"
-                                                    height="320" class="chartjs-render-monitor"></canvas>
+                                                <canvas id="logndetails" style="display: block; margin: 0 auto; width: 300px; height: 200px;" class="chartjs-render-monitor"></canvas>
                                             </div>
                                             <hr>
                                         </div>
                                     </div>
                                 </div>
+                                
 
                                
                                 <div class="col-md-6">
-
                                     <div class="card shadow my-4">
                                         <div class="card-header py-3">
                                             <h6 class="m-0 font-weight-bold text-primary">Total Successful Signups Vs Total Failed Signups</h6>
                                         </div>
                                         <div class="card-body">
                                             <div class="chart-area">
-                                                <div class="chartjs-size-monitor">
-                                                    <div class=""></div>
-                                                    <div class=""></div>
-                                                </div> 
-                                                <canvas id="Signupdetails"
-                                                    style="display: block; width: 653px; height: 320px;" width="653"
-                                                    height="320" class="chartjs-render-monitor"></canvas>
+                                                <canvas id="Signupdetails" style="display: block; margin: 0 auto; width: 300px; height: 200px;"class="chartjs-render-monitor"></canvas>
                                             </div>
                                             <hr>
                                         </div>
                                     </div>
                                 </div>
+                                
 
                                 <div class="col-lg-6">
                                     <div class="card shadow my-4">
                                         <div class="card-header py-3">
-                                            <h6 class="m-0 font-weight-bold text-primary">Trend of Total Successful
+                                            <h6 class="m-0 font-weight-bold text-primary">  Total Successful
                                                 Signups
                                             </h6>
                                         </div>
@@ -1589,7 +1580,7 @@
                                 <div class="col-lg-6">
                                     <div class="card shadow my-4">
                                         <div class="card-header py-3">
-                                            <h6 class="m-0 font-weight-bold text-primary">Trend of Total Failed Signups</h6>
+                                            <h6 class="m-0 font-weight-bold text-primary">  Total Failed Signups</h6>
                                         </div>
                                         <div class="card-body">
                                             <div class="chart-area">
@@ -1608,7 +1599,7 @@
                                 <div class="col-lg-6">
                                     <div class="card shadow my-4">
                                         <div class="card-header py-3">
-                                            <h6 class="m-0 font-weight-bold text-primary">Trend of Total Successful
+                                            <h6 class="m-0 font-weight-bold text-primary">  Total Successful
                                                 Logins</h6>
                                         </div>
                                         <div class="card-body">
@@ -1628,7 +1619,7 @@
                                 <div class="col-lg-6">
                                     <div class="card shadow my-4">
                                         <div class="card-header py-3">
-                                            <h6 class="m-0 font-weight-bold text-primary">Trend of Total Failed
+                                            <h6 class="m-0 font-weight-bold text-primary">  Total Failed
                                                 Logins</h6>
                                         </div>
                                         <div class="card-body">
@@ -1648,11 +1639,11 @@
 
 
 
-                                <!-- Trend of Total Password Reset -->
+                                <!--   Total Password Reset -->
                                 <div class="col-lg-6">
                                     <div class="card shadow my-4">
                                         <div class="card-header py-3">
-                                            <h6 class="m-0 font-weight-bold text-primary">Trend of Total Password Reset
+                                            <h6 class="m-0 font-weight-bold text-primary">  Total Password Reset
                                             </h6>
                                         </div>
                                         <div class="card-body">
@@ -1670,11 +1661,11 @@
                                     </div>
                                 </div>
 
-                                <!-- Trend of Total Session Duration-->
+                                <!--   Total Session Duration-->
                                 <div class="col-lg-6">
                                     <div class="card shadow my-4">
                                         <div class="card-header py-3">
-                                            <h6 class="m-0 font-weight-bold text-primary">Trend of Total Session
+                                            <h6 class="m-0 font-weight-bold text-primary">  Total Session
                                                 Duration </h6>
                                         </div>
                                         <div class="card-body">

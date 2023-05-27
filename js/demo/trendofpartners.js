@@ -1,5 +1,5 @@
 
-// trend of Password Reset
+//   Password Reset
 var ctx = document.getElementById("trendofpartners");
 var myLineChart = new Chart(ctx, {
   type: 'line',
