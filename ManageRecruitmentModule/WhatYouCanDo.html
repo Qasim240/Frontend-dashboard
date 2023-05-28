@@ -169,21 +169,21 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#ManageRecruitmentModule"
+        <a class="nav-link " href="#" data-toggle="collapse" data-target="#ManageRecruitmentModule"
             aria-expanded="true" aria-controls="Dashboard">
             <i class="fa fa-tasks" aria-hidden="true"></i>
             <span>Manage Recruitment Module</span>
         </a>
-        <div id="ManageRecruitmentModule" class="collapse " aria-labelledby="headingTwo"
+        <div id="ManageRecruitmentModule" class="collapse show" aria-labelledby="headingTwo"
             data-parent="#accordionSidebar">
             <div class="py-2 collapse-inner rounded">
                 <div class=" ">
-                    <a class="nav-link  w-12rem sub-nav-link collapsed" href="#" data-toggle="collapse"
+                    <a class="nav-link  w-12rem sub-nav-link " href="#" data-toggle="collapse"
                         data-target="#CandidateOnboarding" aria-expanded="true" aria-controls="GlobalDashboard">
                         <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
                         <span>Candidate Onboarding</span>
                     </a>
-                    <div id="CandidateOnboarding" class="collapse " aria-labelledby="headingTwo"
+                    <div id="CandidateOnboarding" class="collapse show" aria-labelledby="headingTwo"
                         data-parent="#Dashboard">
                         <div class="">
                             <div class="collapse-inner">
@@ -191,17 +191,17 @@
                                     href="../ManageRecruitmentModule/RecruitmentIntroductoryVideo.html">Management
                                     Recruitment Introductory Video</a>
                                 <a class="collapse-item"
-                                    href="../ManageRecruitmentModule/WhoAreYouForm.html">Manage Candidate ""Who
-                                    Are You"" Form </a>
-                                <a class="collapse-item"
-                                    href="../ManageRecruitmentModule/WhatYouCanDo.html">Manage Candidate ""What
-                                    You Can Do"" Form</a>
+                                    href="../ManageRecruitmentModule/WhoAreYouForm.html">Manage Candidate "Who
+                                    Are You" Form </a>
+                                <a class="collapse-item active"
+                                    href="../ManageRecruitmentModule/WhatYouCanDo.html">Manage Candidate "What
+                                    You Can Do" Form</a>
                                 <a class="collapse-item"
                                     href="../ManageRecruitmentModule/WhereHaveYouDone.html">Manage Candidate
-                                    ""Where Have You Done It"" Form</a>
+                                    "Where Have You Done It" Form</a>
                                 <a class="collapse-item"
                                     href="../ManageRecruitmentModule/AchievementForm.html">Manage Candidate
-                                    ""Achievement"" Form</a>
+                                    "Achievement" Form</a>
                             </div>
                         </div>
                     </div>
@@ -1203,8 +1203,8 @@
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
-     <!-- Topbar -->
-     <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+       <!-- Topbar -->
+       <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
         <div class="text-center d-none d-md-inline">
             <button class="rounded-circle border-0 mb-0" id="sidebarToggle"><i
                     class="fa fa-bars"></i></button>
@@ -1254,13 +1254,7 @@
                     </form>
                 </div>
             </li>
-            <li class="nav-item dropdown no-arrow mx-1 d-md-block d-none">
-                <a class="nav-link" href="">
-                    Last login: May 6, 2023 at 10:30pm
 
-                </a>
-
-            </li>
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">
@@ -1318,6 +1312,13 @@
             <div class="topbar-divider d-none d-sm-block"></div>
 
             <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow mx-1 d-lg-block d-none">
+                <a class="nav-link small">
+                    Last login: May 6, 2023 at 10:30pm
+
+                </a>
+
+            </li>
             <li class="nav-item dropdown no-arrow">
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -1347,13 +1348,21 @@
                 </div>
             </li>
 
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle btn-primary" href="../signinDashboard.html"> <span
+                        class="mr-2 text-white small">Sign in</span>
+
+                </a>
+
+            </li>
+
         </ul>
 
     </nav>
     <!-- End of Topbar -->
       <!-- Main Content -->
       <div class="container ">
-        <h1>What you can do Form</h1>
+        <h1 class="mb-4 text-primary font-weight-bold">WHAT YOU CAN DO</h1>
         <div class="row mb-5">
             <div class="col-lg-5">
 
@@ -1368,6 +1377,10 @@
                         <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
                             Export Raw Data
                         </button>
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#addFieldModal">Add New Field</button>
+
                     </div>
                 </div>
 
@@ -1394,7 +1407,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="">
-                            <input cl type="date" id="Custom" name="Custom" class=" mb-3 form-control">
+                            <input placeholder="Custom Calendar" class="form-control" type="text" onfocus="(this.type='date')" id="date">
+
                         </div>
                     </div>
                 </div>
@@ -1408,7 +1422,6 @@
 
 
         </div>
-        <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#addFieldModal">Add New Field</button>
         <div class="table-responsive">
             <table class="table table-bordered data-table" id="dataTable" width="100%"
             cellspacing="0">
@@ -1536,7 +1549,7 @@
           <button class="btn btn-secondary" type="button" data-dismiss="modal">
             Cancel
           </button>
-         <a class="btn btn-primary" href="signinDashboard.html">Logout</a>
+         <a class="btn btn-primary" href="../signinDashboard.html">Logout</a>
         </div>
       </div>
     </div>
@@ -1569,6 +1582,26 @@
 
 
   <script>
+
+    
+// Get the table body
+  var tableBody = document.querySelector("#dataTable tbody");
+
+// Get the row to be repeated
+var rowToRepeat = document.querySelector("#dataTable tbody tr");
+
+// Loop to add 10 copies of the row
+for (var i = 0; i < 10; i++) {
+    // Clone the row
+    var clonedRow = rowToRepeat.cloneNode(true);
+
+    // Update any necessary values in the cloned row
+    clonedRow.querySelector("td:nth-child(2)").textContent = i + 2;
+
+    // Append the cloned row to the table body
+    tableBody.appendChild(clonedRow);
+}
+
    // Update video button click event
    $("#update-video-btn").click(function() {
         // Show file upload dialog and get the selected file
