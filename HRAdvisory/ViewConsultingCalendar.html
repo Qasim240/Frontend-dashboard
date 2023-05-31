@@ -670,7 +670,7 @@
                                 <a class="collapse-item" href="../HRAdvisory/ViewHRAdvisorySubscribers.html">View
                                     HR Advisory Subscribers</a>
                                 <a class="collapse-item"
-                                    href="../HRAdvisory/CreateNewHRAdvisorySubscriber.html">Create HR Advisory
+                                    href="../HRAdvisory/CreateHRAdvisoryPartner.html">Create HR Advisory
                                     Partner</a>
                                 <a class="collapse-item" href="../HRAdvisory/ViewHRAdvisoryPartners.html">View HR
                                     Advisory Partners</a>
@@ -1364,6 +1364,8 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+            
+<h1 class="mb-3 text-primary mt-0 mb-4 font-weight-bold">VIEW CONSULTING CALENDAR</h1>
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
                 <div class="card-body">
@@ -1374,11 +1376,11 @@
                         <div class="col-lg-5">
 
                             <div class="row">
-                                <div class="col-lg-6">
+                                <!-- <div class="col-lg-6">
                                     <button class="btn btn-primary mb-2 w-100 mr-3" data-toggle="modal" data-target="#newUserModal">
                                         Add New Knowledge
                                     </button>
-                                </div>
+                                </div> -->
                                 <div class="col-lg-6">
                                     <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
                                         Export Raw Data
@@ -1626,6 +1628,25 @@
   </div>
 
   <script>
+    
+
+// Get the table body
+  var tableBody = document.querySelector("#dataTable tbody");
+
+// Get the row to be repeated
+var rowToRepeat = document.querySelector("#dataTable tbody tr");
+
+// Loop to add 10 copies of the row
+for (var i = 0; i < 10; i++) {
+    // Clone the row
+    var clonedRow = rowToRepeat.cloneNode(true);
+
+    // Update any necessary values in the cloned row
+    clonedRow.querySelector("td:nth-child(2)").textContent = i + 2;
+
+    // Append the cloned row to the table body
+    tableBody.appendChild(clonedRow);
+}
    // Update video button click event
    $("#update-video-btn").click(function() {
         // Show file upload dialog and get the selected file

@@ -1365,6 +1365,7 @@
 
         <!-- Begin Page Content -->
         <div class="container py-2">
+            <h1 class="mb-3 text-primary mt-0 mb-4 font-weight-bold">VIEW VERIFICATION SUBSCRIBERS</h1>
             <div class="row mb-5">
                 <div class="col-lg-5">
 
@@ -1546,6 +1547,23 @@
 
 
   <script>
+    // Get the table body
+  var tableBody = document.querySelector("#dataTable tbody");
+
+// Get the row to be repeated
+var rowToRepeat = document.querySelector("#dataTable tbody tr");
+
+// Loop to add 10 copies of the row
+for (var i = 0; i < 10; i++) {
+    // Clone the row
+    var clonedRow = rowToRepeat.cloneNode(true);
+
+    // Update any necessary values in the cloned row
+    clonedRow.querySelector("td:nth-child(2)").textContent = i + 2;
+
+    // Append the cloned row to the table body
+    tableBody.appendChild(clonedRow);
+}
    // Update video button click event
    $("#update-video-btn").click(function() {
         // Show file upload dialog and get the selected file

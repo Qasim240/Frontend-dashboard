@@ -11381,3 +11381,8 @@ h1{
   #dataTable thead th:nth-child(2)::after {
     display: none !important;
   }
+
+  .table th, .table td{
+    padding: 3px 11px;
+    vertical-align: middle;
+  }
