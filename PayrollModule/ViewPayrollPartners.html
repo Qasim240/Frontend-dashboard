@@ -1359,121 +1359,377 @@
 
 
                     <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-body">
-                            <div class="row mb-5">
-                                <div class="col-lg-5">
-            
-                                    <div class="row">
-                                        <!-- <div class="col-lg-6">
-                                            <button class="btn btn-primary mb-2 w-100 mr-3" data-toggle="modal"
-                                                data-target="#newUserModal">
-                                                Create New User
-                                            </button>
-                                        </div> -->
-                                        <div class="col-lg-6">
-                                            <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
-                                                Export Raw Data
-                                            </button>
-                                        </div>
-                                    </div>
-            
-                                </div>
-            
-                                <div class="col-lg-2">
-                                    <div class="text-center my-lg-0 my-3">
-                                        <p class="mb-0">Total Candidates: 350</p>
-                                    </div>
-                                </div>
-            
-            
-                                <div class="col-lg-5">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="form-group mb-0 d-flex">
-                                                <select class="form-control mb-3" id="dateFilter">
-                                                    <option disabled selected value="all">Filter by</option>
-                                                    <option value="last24">Last 24 Hours</option>
-                                                    <option value="last7">Last 7 Days</option>
-                                                    <option value="last30">Last 30 Days</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="">
-                                                <input  placeholder="Custom Calendar" class="form-control" type="text" onfocus="(this.type='date')" id="date" />
-                                            </div>
-                                        </div>
-                                    </div>
-            
-            
-            
-            
-            
-            
-                                </div>
-            
-            
-                            </div>
-                            <h1 class="mb-4">Payroll Partners</h1>
-                            <div class="table-responsive">
-                                <table class="table table-bordered data-table" id="partnerTable" width="100%" cellspacing="0">
-                                    <thead>
-                                      <tr>
-                                        <th>SN</th>
-                                        <th>Country</th>
-                                        <th>Partner Company Name</th>
-                                        <th>Total Partner Subscribers</th>
-                                        <th>Contact Person</th>
-                                        <th>Contact Person Email</th>
-                                        <th>Contact Person Phone</th>
-                                        <th>Partner Status</th>
-                                        <th>Date Added</th>
-                                        <th>Payment Card Status</th>
-                                        <th>Created By</th>
-                                        <th>Last Updated</th>
-                                        <th>Action</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>1</td>
-                                        <td>United States</td>
-                                        <td>ABC Partner</td>
-                                        <td>25</td>
-                                        <td>John Doe</td>
-                                        <td>johndoe@example.com</td>
-                                        <td>08012345678</td>
-                                        <td>Active</td>
-                                        <td>2023-05-13</td>
-                                        <td>Active</td>
-                                        <td>Admin User</td>
-                                        <td>2023-05-13</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                  Action
+                    <div class="container-fluid">
+                <h1 class="mb-4">Payroll Partners</h1>
+
+                        <div class="card shadow mb-4">
+                            <div class="card-body">
+                                <div class="row mb-5">
+                                    <div class="col-lg-5">
+                
+                                        <div class="row">
+                                            <!-- <div class="col-lg-6">
+                                                <button class="btn btn-primary mb-2 w-100 mr-3" data-toggle="modal"
+                                                    data-target="#newUserModal">
+                                                    Create New User
                                                 </button>
-                                                <div class="dropdown-menu" aria-labelledby="actionDropdown1">
-                                                  <a class="dropdown-item" href="#">View Partner</a>
-                                                  <a class="dropdown-item" href="#">Edit Partner</a>
-                                                  <a class="dropdown-item" href="#">Suspend Subscriber</a>
-                                                  <a class="dropdown-item" href="#">Activate Partner</a>
+                                            </div> -->
+                                            <div class="col-lg-6">
+                                                <button class="btn w-100 btn-primary mr-3" onclick="exportData()">
+                                                    Export Raw Data
+                                                </button>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                
+                                    <div class="col-lg-2">
+                                        <div class="text-center my-lg-0 my-3">
+                                            <p class="mb-0">Total Candidates: 350</p>
+                                        </div>
+                                    </div>
+                
+                
+                                    <div class="col-lg-5">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-0 d-flex">
+                                                    <select class="form-control mb-3" id="dateFilter">
+                                                        <option disabled selected value="all">Filter by</option>
+                                                        <option value="last24">Last 24 Hours</option>
+                                                        <option value="last7">Last 7 Days</option>
+                                                        <option value="last30">Last 30 Days</option>
+                                                    </select>
                                                 </div>
-                                              </div>
-                                              
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                  
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="">
+                                                    <input  placeholder="Custom Calendar" class="form-control" type="text" onfocus="(this.type='date')" id="date" />
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                
+                
+                
+                
+                
+                                    </div>
+                
+                
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered data-table" id="partnerTable" width="100%" cellspacing="0">
+                                        <thead>
+                                          <tr>
+                                            <th>SN</th>
+                                            <th>Country</th>
+                                            <th>Partner Company Name</th>
+                                            <th>Total Partner Subscribers</th>
+                                            <th>Contact Person</th>
+                                            <th>Contact Person Email</th>
+                                            <th>Contact Person Phone</th>
+                                            <th>Partner Status</th>
+                                            <th>Date Added</th>
+                                            <th>Payment Card Status</th>
+                                            <th>Created By</th>
+                                            <th>Last Updated</th>
+                                            <th>Action</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>United States</td>
+                                            <td>ABC Partner</td>
+                                            <td>25</td>
+                                            <td>John Doe</td>
+                                            <td>johndoe@example.com</td>
+                                            <td>08012345678</td>
+                                            <td>Active</td>
+                                            <td>2023-05-13</td>
+                                            <td>Active</td>
+                                            <td>Admin User</td>
+                                            <td>2023-05-13</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-primary dropdown-toggle" type="button" id="actionDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                      Action
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="actionDropdown1">
+                                                      <a class="dropdown-item" href="#">View Partner</a>
+                                                      <a class="dropdown-item" href="#">Edit Partner</a>
+                                                      <a class="dropdown-item" href="#">Suspend Subscriber</a>
+                                                      <a class="dropdown-item" href="#">Activate Partner</a>
+                                                    </div>
+                                                  </div>
+                                                  
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      
+                                </div>
+    
+    
+    
+    
                             </div>
-
-
-
-
+    
+    
                         </div>
-
 
                     </div>
                     <!-- End of Main Content -->

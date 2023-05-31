@@ -11389,4 +11389,5 @@ h1{
   h1,h2{
     color: #E82583 !important;
     font-weight: 700;
+    text-transform: uppercase;
   }
