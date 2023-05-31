@@ -11386,3 +11386,7 @@ h1{
     padding: 3px 11px;
     vertical-align: middle;
   }
+  h1,h2{
+    color: #E82583 !important;
+    font-weight: 700;
+  }
